@@ -1,6 +1,11 @@
 # Gadget
 
 Este proyecto está diseñado para extraer información de la página web de Cinesa y almacenarla en una base de datos.
+<p align="center">
+   
+   ![Gadget imagen](gadget.jpeg)
+   
+</p>
 
 ## Características
 - **Scraping**: Extrae la lista de películas disponibles en [Cinesa](https://www.cinesa.es/peliculas/).
