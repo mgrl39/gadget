@@ -1,10 +1,9 @@
 # Gadget
 
 Este proyecto está diseñado para extraer información de la página web de Cinesa y almacenarla en una base de datos.
-<p style="text-align:center;">
-   <img src="https://raw.githubusercontent.com/mgrl39/gadget/refs/heads/main/gadget.jpeg" 
-        alt="Gadget imagen" 
-        style="width:50%; max-width:300px;">
+
+<p align="center">
+  <img src="gadget.jpeg" width="300" alt="Gadget Logo">
 </p>
 
 ## Características
