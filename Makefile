@@ -3,8 +3,8 @@
 .PHONY: help
 help:
 	@grep -E '(^#|^[a-zA-Z_-]+:)' $(MAKEFILE_LIST) | \
-	awk 'BEGIN {FS = ":.*?#"}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' | \
-	awk 'NF > 1'
+		awk 'BEGIN {FS = ":.*?#"}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' | \
+		awk 'NF > 1'
 
 .PHONY: clean
 clean: 
@@ -13,11 +13,16 @@ clean:
 .PHONY: build
 build:
 	mkdir -p build
-	# Commands to build the project
-	#
+
 venv:
 	source venv/bin/activate
 
+
+.PHONY: install
+install:
+	@echo "Installing dependencies..."
+	pip install -r requirements.txt
+
 .PHONY: test
 test:
-	# Commands to run tests
+	# TODO: command test

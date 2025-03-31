@@ -2,11 +2,17 @@ import time
 import sys
 import requests
 from bs4 import BeautifulSoup
+from pprint import pprint
 import json
 import os
+import yaml
 import re
 import signal
 from colorama import init, Fore, Back, Style
+
+def initializer():
+    with open("config/config.yaml") as f:
+        cfg = yaml.load(f, Loader=yaml.FullLoader)
 
 def signal_handler(signum, frame):
     print(f"\n{Colors.YELLOW}Received interrupt signal. Stopping...{Colors.RESET}")
@@ -59,11 +65,12 @@ def display_progress_bar(total=1007, bar_length=30):
         percent = 100.0 * i / total
         sys.stdout.write('\r')
         sys.stdout.write("Completed: [{:{}}] {:>3}%"
-                         .format('=' * int(percent / (100.0 / bar_length)),
-                                 bar_length, int(percent)))
+                .format('=' * int(percent / (100.0 / bar_length)),
+                    bar_length, int(percent)))
         sys.stdout.flush()
         time.sleep(0.002)
 
 # Llamar a la función para mostrar la barra de progreso
 print_logo();
+initializer();
 #display_progress_bar()
