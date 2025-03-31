@@ -1,0 +1,51 @@
+# Directorios generados
+__pycache__/
+venv/
+logs/
+
+# Archivos de log
+*.log
+
+# Archivos temporales
+*.tmp
+*.swp
+*.bak
+
+# Dependencias instaladas
+requirements.txt.lock
+
+# Configuración sensible
+config.py
+*.env
+.env.*
+
+# Archivos descargados o generados por el script init.sh
+google-chrome-stable_current_amd64.deb
+
+# Archivos generados por LXC
+lxc-*.conf
+lxc-*.log
+
+# Archivos generados por Selenium o WebDriver Manager
+/webdriver-manager/
+/.wdm/
+
+# Archivos generados por Makefile (si aplica)
+Makefile.out
+*.o
+
+# IDE-specific files (opcional, si usas algún editor)
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos generados por Git
+.git/
+.DS_Store
+Thumbs.db
+
+# Otros archivos específicos
+*.pyc
+*.pyo
+*.pyd
