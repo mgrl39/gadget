@@ -5,11 +5,12 @@ END=\033[0m
 
 .DEFAULT_GOAL := help
 
-all: 
-
 help:
+	@echo -n "${GREEN}"
+	@echo "Comandos:"
+	@echo -n "${END}"
 
 pull:
 	git fetch && git pull origin $(shell git branch --show-current)
 
-.PHONY: all help pull
+.PHONY: help pull
