@@ -1,21 +1,20 @@
-GREEN=\033[0;32m
-RED=\033[0;31m
-BLUE=\033[0;34m
-END=\033[0m
+# Makefile
 
-SCRIPTS_FOLDER="scripts/"
-
-.DEFAULT_GOAL := help
-
+.PHONY: help
 help:
-	@echo -n "${GREEN}"
-	@echo "Comandos:"
-	@echo -n "${END}"
+	@grep -E '(^#|^[a-zA-Z_-]+:)' $(MAKEFILE_LIST) | \
+	awk 'BEGIN {FS = ":.*?#"}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' | \
+	awk 'NF > 1'
 
-venv:
-	chmod u+x ${SCRIPTS_FOLDER}noroot.sh
+.PHONY: clean
+clean: 
+	rm -rf build
 
-pull:
-	git fetch && git pull origin $(shell git branch --show-current)
+.PHONY: build
+build:
+	mkdir -p build
+	# Commands to build the project
 
-.PHONY: help pull
+.PHONY: test
+test:
+	# Commands to run tests
