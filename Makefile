@@ -14,6 +14,9 @@ clean:
 build:
 	mkdir -p build
 	# Commands to build the project
+	#
+venv:
+	source venv/bin/activate
 
 .PHONY: test
 test:
