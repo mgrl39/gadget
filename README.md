@@ -2,7 +2,7 @@
 
 Este proyecto está diseñado para extraer información de la página web de Cinesa y almacenarla en una base de datos.
 <p style="text-align:center;">
-   <img src="gadget.jpeg" alt="Gadget imagen">
+   <img src="gadget.jpeg" alt="Gadget imagen" style="width:50%; max-width:300px;">
 </p>
 
 ## Características
