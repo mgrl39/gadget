@@ -22,16 +22,15 @@ build:  # 🏗️ Crea la estructura de carpetas necesarias
 
 # 📦 2️⃣ ENTORNO VIRTUAL Y DEPENDENCIAS
 .PHONY: venv
-venv:  # 🐍 Crea y activa el entorno virtual
-	@if [ ! -d "venv" ]; then python3 -m venv venv; fi
-	@echo "🔗 Activando entorno virtual..."
-	. venv/bin/activate
+venv:  # 🔧 Configura entorno virtual
+	@echo "🔧 Configurando entorno virtual..."
+	@bash installers/virtual_env.sh
 
 .PHONY: install
-install:  # 📥 Instala dependencias de Python
+install: venv  # 📦 Instala todas las dependencias
 	@echo "📦 Instalando dependencias..."
-	source venv/bin/activate && pip install --upgrade pip
-	source venv/bin/activate && pip install -r requirements.txt
+	@bash -c "source venv/bin/activate && pip install -r requirements.txt"
+	@echo "✅ Dependencias instaladas correctamente."
 
 # 🌍 3️⃣ WEB SCRAPING
 .PHONY: scrape
@@ -40,10 +39,11 @@ scrape:  # 🌐 Ejecuta el scraper
 
 ###############################################################################$
 # 🗄️ 4️⃣ BASE DE DATOS
-.PHONY: db-setup
-db-setup:  # 🛠️ Configura la base de datos
-	@echo "⚙️ Configurando base de datos..."
-	source venv/bin/activate && python db/setup.py
+.PHONY: setup-db
+setup-db: install  # 🗄️ Configura la base de datos (requiere entorno virtual e instalación)
+	@echo "🗄️ Configurando base de datos..."
+	@bash -c "source venv/bin/activate && python installers/setup_db.py"
+	@echo "✅ Base de datos configurada correctamente."
 
 .PHONY: db-reset
 db-reset:  # 🔄 Reinicia la base de datos
@@ -57,25 +57,40 @@ db-backup:  # 💾 Realiza un backup de la base de datos
 
 .PHONY: db-purge
 db-purge:  # 💀 Elimina la base de datos y el entorno virtual
-	@echo "⚠️  Eliminando la base de datos y el entorno virtual..."
-	rm -rf *.db venv
+	@echo "⚠️ Eliminando la base de datos y el entorno virtual..."
+	@if [ -d "venv" ] && [ -f "venv/bin/activate" ]; then \
+		bash -c "source venv/bin/activate && python scripts/purge_db.py"; \
+	else \
+		python3 scripts/purge_db.py; \
+	fi
+	@echo "🧹 Eliminando entorno virtual..."
+	@rm -rf venv
 	@echo "✅ Base de datos y entorno virtual eliminados."
-###############################################################################$
+
+# ✅ 0️⃣ TUTORIAL Y ASISTENTE DE CONFIGURACIÓN
+.PHONY: tutorial
+tutorial:  # 📚 Muestra guía paso a paso y verifica estado de instalación
+	@bash scripts/setup_checker.sh
+
+.PHONY: run
+run: setup-db  # 🚀 Ejecuta el programa principal (requiere todos los pasos anteriores)
+	@echo "🚀 Iniciando Gadget..."
+	@bash -c "source venv/bin/activate && python run.py"
 
 # ✅ 6️⃣ PRUEBAS Y DESPLIEGUE
 .PHONY: test
-test:  # 🧪 Ejecuta los tests
+test: install  # 🧪 Ejecuta los tests (requiere entorno virtual e instalación)
 	@echo "✅ Ejecutando tests..."
-	source venv/bin/activate && pytest tests/
+	@bash -c "source venv/bin/activate && pytest tests/"
 
 .PHONY: deploy
-deploy:  # 🚀 Despliega la aplicación
+deploy: setup-db  # 🚀 Despliega la aplicación (requiere configuración completa)
 	@echo "🌍 Desplegando aplicación..."
-	bash scripts/deploy.sh
+	@bash scripts/deploy.sh
 
 .PHONY: check
 check:  # ✅ Verifica el estado del entorno
-	bash checkers/environment_check.sh
+	@bash checkers/environment_check.sh
 
 .PHONY: show-rule
 show-rule: # 📙 Muestra la regla que le indiques en RULE=

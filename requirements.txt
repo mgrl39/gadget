@@ -1,8 +1,17 @@
-requests
-beautifulsoup4
-selenium
-webdriver-manager
-colorama
-argparse
-mysql.connector
-mysql-connector-python
+# Cliente HTTP y Scraping
+requests>=2.28.1
+beautifulsoup4>=4.11.1
+selenium>=4.5.0
+webdriver-manager>=3.8.4
+
+# Formateo y CLI
+colorama>=0.4.5
+argparse>=1.4.0
+pyyaml>=6.0
+
+# Base de datos
+mysql-connector-python>=8.0.30
+
+# Utilidades
+pytest>=7.2.0
+python-dotenv>=0.21.0
