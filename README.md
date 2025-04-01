@@ -1,35 +1,33 @@
-# Gadget
+# 🤖 Gadget
 
-Este proyecto está diseñado para extraer información de diversas páginas web y almacenarla en una base de datos.
+Este proyecto está diseñado para 🕵️‍♂️ extraer información de diversas páginas web y almacenarla en una base de datos.
 
 <p align="center">
   <img src="gadget.jpeg" width="500" alt="Gadget Logo">
 </p>
 
-## Características
+## 🚀 Características
 
-- Scraping de diferentes sitios web
-- Inserción de datos en MySQL
-- Automatización con `Makefile`
-- Soporte de contenedores LXC
+- 🔍 Scraping de diferentes sitios web
+- 🗄️ Inserción de datos en MySQL
+- ⚙️ Automatización con `Makefile`
 
-## Requisitos
+## 📋 Requisitos
 
-- Python 3.x
-- Entorno virtual (`venv`)
-- Dependencias en `requirements.txt`
-- MySQL instalado
-- Opcional: LXC para entornos aislados
+- 🐍 Python 3.x
+- 🛠️ Entorno virtual (`venv`)
+- 📦 Dependencias en `requirements.txt`
+- 🏛️ MySQL instalado
 
-## Instalación
+```
+## 🛠️ Instalación
 
 ```bash
-make venv   # Configurar entorno virtual
-make install   # Instalar dependencias
-make lxc   # Crear y configurar un contenedor LXC
+make venv   # 🔗 Configurar entorno virtual
+make install   # 📥 Instalar dependencias
 ```
 
-## Configuración
+## ⚙️ Configuración
 
 Edita `config/config.yaml` con las credenciales de tu base de datos:
 
@@ -47,15 +45,14 @@ database:
   name: "gadget_db"
 ```
 
-## Uso
+## 🎯 Uso
 
 ```bash
-make run   # Ejecutar el scraper
-make test   # Ejecutar pruebas
-make clean   # Limpiar archivos temporales
-make lxc   # Levantar un contenedor LXC
+make run   # 🤖 Ejecutar el scraper
+make test   # ✅ Ejecutar pruebas
+make clean   # 🧹 Limpiar archivos temporales
 ```
 
-## Licencia
+## 📜 Licencia
 
 Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.

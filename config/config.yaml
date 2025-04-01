@@ -1,12 +1,14 @@
 maintainer: mgrl39
-version: 1.0
-scrape_website: www.cinesa.es
 github_repo: gadget
+version: 1.0
+
+# Scraper
+scrape_website: www.cinesa.es
 
 # 🔗 URLs del proyecto
 urls:
-  api_base: "https://api.cinesa.es"
-  login_page: "https://www.cinesa.es/login"
+  api_base: ""
+  login_page: ""
 
 # 📦 Dependencias del sistema
 dependencies:
@@ -14,8 +16,6 @@ dependencies:
   - python3-pip
   - python3-venv
   - mysql-server
-  - lxc
-  - docker
 
 # 🔑 Credenciales (⚠️ Evita guardarlas aquí en texto plano, usa variables de entorno)
 database:
@@ -31,12 +31,6 @@ scraper:
   headless: true
   max_retries: 3
   timeout: 10  # segundos
-
-# ⚙️ Configuración de LXC
-lxc:
-  container_name: "mi-contenedor"
-  image: "ubuntu"
-  release: "22.04"
 
 # 🔎 Opciones de Testing
 testing:

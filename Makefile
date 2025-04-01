@@ -47,13 +47,8 @@ db-reset:  # 🔄 Reinicia la base de datos
 .PHONY: db-backup
 db-backup:  # 💾 Realiza un backup de la base de datos
 	@echo "📂 Creando backup..."
-	source venv/bin/activate && python db/backup.py
+	bash keepers/backup_db.sh
 
-# 🏠 5️⃣ CONTENEDORES (LXC)
-.PHONY: lxc-setup
-lxc-setup:  # 🚀 Crea un contenedor LXC
-	@echo "🛠️ Creando contenedor LXC..."
-	bash scripts/lxc_setup.sh
 
 # ✅ 6️⃣ PRUEBAS Y DESPLIEGUE
 .PHONY: test
