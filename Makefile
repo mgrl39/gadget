@@ -20,7 +20,7 @@ build:  # 🏗️ Crea la estructura de carpetas necesarias
 venv:  # 🐍 Crea y activa el entorno virtual
 	@if [ ! -d "venv" ]; then python3 -m venv venv; fi
 	@echo "🔗 Activando entorno virtual..."
-	source venv/bin/activate
+	. venv/bin/activate
 
 .PHONY: install
 install:  # 📥 Instala dependencias de Python
@@ -66,11 +66,19 @@ check:  # ✅ Verifica el estado del entorno
 	bash checkers/environment_check.sh
 
 .PHONY: show-rule
-show-rule:  # 🔍 Muestra el contenido de una regla específica del Makefile
+show-rule: # 📙 Muestra la regla que le indiques en RULE=
 	@if [ -z "$(RULE)" ]; then \
-		echo "❌ Debes especificar una regla. Ejemplo: make show-rule RULE=help"; \
+		echo "❌ Debes especificar una regla con RULE=<nombre>"; \
+	elif ! grep -qE "^$(RULE):" $(MAKEFILE_LIST); then \
+		echo "❌ La regla '$(RULE)' no existe."; \
 	else \
-		echo "🔍 Mostrando la regla '$(RULE)':"; \
-		awk -v r="^$(RULE):" '$$0 ~ r {print; f=1; next} f && NF==0 {exit} f' $(MAKEFILE_LIST); \
+		echo "🔍 Mostrando la regla '$(RULE)'\n"; \
+		if command -v bat >/dev/null 2>&1; then \
+			grep -A 10 -E "^$(RULE):" $(MAKEFILE_LIST) | bat --style=plain --language=makefile; \
+		elif command -v batcat >/dev/null 2>&1; then \
+			grep -A 10 -E "^$(RULE):" $(MAKEFILE_LIST) | batcat --style=plain --language=makefile; \
+		else \
+			grep -A 10 -E "^$(RULE):" $(MAKEFILE_LIST) | cat; \
+		fi; \
 	fi
 
