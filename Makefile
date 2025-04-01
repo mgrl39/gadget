@@ -60,3 +60,8 @@ test:  # 🧪 Ejecuta los tests
 deploy:  # 🚀 Despliega la aplicación
 	@echo "🌍 Desplegando aplicación..."
 	bash scripts/deploy.sh
+
+.PHONY: check
+check:  # ✅ Verifica el estado del entorno
+	bash checkers/environment_check.sh
+

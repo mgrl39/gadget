@@ -5,3 +5,4 @@ webdriver-manager
 colorama
 argparse
 mysql.connector
+mysql-connector-python

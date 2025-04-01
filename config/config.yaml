@@ -17,13 +17,13 @@ dependencies:
   - python3-venv
   - mysql-server
 
-# 🔑 Credenciales (⚠️ Evita guardarlas aquí en texto plano, usa variables de entorno)
+# 🔑 Credenciales (⚠️ Evitar guardar aquí en texto plano, usar variables de entorno)
 database:
   host: "localhost"
   port: 3306
-  user: "gadget_user"
-  password: "supersegura"
-  name: "gadget_db"
+  user: "root"
+  password: "root"
+  name: "cinedb"
 
 # 🔍 Configuración del Web Scraper
 scraper:
