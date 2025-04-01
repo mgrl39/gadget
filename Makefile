@@ -37,6 +37,7 @@ install:  # 📥 Instala dependencias de Python
 scrape:  # 🌐 Ejecuta el scraper
 	source venv/bin/activate && python scraper.py
 
+###############################################################################
 # 🗄️ 4️⃣ BASE DE DATOS
 .PHONY: db-setup
 db-setup:  # 🛠️ Configura la base de datos
@@ -53,6 +54,13 @@ db-backup:  # 💾 Realiza un backup de la base de datos
 	@echo "📂 Creando backup..."
 	bash keepers/backup_db.sh
 
+.PHONY: db-purge
+db-purge:  # 💀 Elimina la base de datos y el entorno virtual
+	@echo "⚠️  Eliminando la base de datos y el entorno virtual..."
+	rm -rf *.db venv
+	@echo "✅ Base de datos y entorno virtual eliminados."
+
+###############################################################################
 
 # ✅ 6️⃣ PRUEBAS Y DESPLIEGUE
 .PHONY: test
