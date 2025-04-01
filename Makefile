@@ -49,19 +49,11 @@ db-backup:  # 💾 Realiza un backup de la base de datos
 	@echo "📂 Creando backup..."
 	source venv/bin/activate && python db/backup.py
 
-# 🐳 5️⃣ CONTENEDORES (LXC/Docker)
+# 🏠 5️⃣ CONTENEDORES (LXC)
 .PHONY: lxc-setup
 lxc-setup:  # 🚀 Crea un contenedor LXC
 	@echo "🛠️ Creando contenedor LXC..."
 	bash scripts/lxc_setup.sh
-
-.PHONY: docker-build
-docker-build:  # 🏗️ Construye la imagen de Docker
-	docker build -t gadget-app .
-
-.PHONY: docker-run
-docker-run:  # ▶️ Ejecuta el contenedor de Docker
-	docker run --rm -p 8080:8080 gadget-app
 
 # ✅ 6️⃣ PRUEBAS Y DESPLIEGUE
 .PHONY: test
@@ -73,4 +65,3 @@ test:  # 🧪 Ejecuta los tests
 deploy:  # 🚀 Despliega la aplicación
 	@echo "🌍 Desplegando aplicación..."
 	bash scripts/deploy.sh
-
