@@ -65,3 +65,12 @@ deploy:  # 🚀 Despliega la aplicación
 check:  # ✅ Verifica el estado del entorno
 	bash checkers/environment_check.sh
 
+.PHONY: show-rule
+show-rule:  # 🔍 Muestra el contenido de una regla específica del Makefile
+	@if [ -z "$(RULE)" ]; then \
+		echo "❌ Debes especificar una regla. Ejemplo: make show-rule RULE=help"; \
+	else \
+		echo "🔍 Mostrando la regla '$(RULE)':"; \
+		awk -v r="^$(RULE):" '$$0 ~ r {print; f=1; next} f && NF==0 {exit} f' $(MAKEFILE_LIST); \
+	fi
+
