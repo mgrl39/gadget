@@ -33,3 +33,11 @@ show-rule: # 📙 Muestra la regla que le indiques en RULE=
 		fi; \
 	fi
 
+check:
+	@echo "Verificando estado de la configuración..."
+	@bash checkers/setup_checker.sh
+
+purge-db:
+	@echo "Eliminando base de datos..."
+	@python3 purgers/purge_db.py
+

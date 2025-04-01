@@ -19,9 +19,9 @@ db-backup:  # 💾 Realiza un backup de la base de datos
 db-purge:  # 💀 Elimina la base de datos y el entorno virtual
 	@echo "⚠️ Eliminando la base de datos y el entorno virtual..."
 	@if [ -d "venv" ] && [ -f "venv/bin/activate" ]; then \
-		bash -c "source venv/bin/activate && python scripts/purge_db.py"; \
+		bash -c "source venv/bin/activate && python purgers/purge_db.py"; \
 	else \
-		python3 scripts/purge_db.py; \
+		python3 purgers/purge_db.py; \
 	fi
 	@echo "🧹 Eliminando entorno virtual..."
 	@rm -rf venv
