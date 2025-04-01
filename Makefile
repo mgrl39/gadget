@@ -8,8 +8,12 @@ help:  # 📖 Muestra los comandos disponibles
 
 # 🔥 1️⃣ LIMPIEZA Y CONFIGURACIÓN
 .PHONY: clean
-clean:  # 🧹 Limpia archivos temporales
+clean:  # 🧹 Limpia archivos temporales y elimina el entorno virtual
+	@echo "🔥 Eliminando archivos temporales y el entorno virtual..."
 	rm -rf build venv __pycache__ *.log *.db
+	find . -type d -name "__pycache__" -exec rm -rf {} +
+	find . -type f -name "*.pyc" -delete
+	find . -type f -name "*.pyo" -delete
 
 .PHONY: build
 build:  # 🏗️ Crea la estructura de carpetas necesarias
