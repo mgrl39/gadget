@@ -11,6 +11,7 @@ Este proyecto está diseñado para 🕵️‍♂️ extraer información de dive
 - 🔍 Scraping de diferentes sitios web
 - 🗄️ Inserción de datos en MySQL
 - ⚙️ Automatización con `Makefile`
+- 🖥️ Panel de control web interactivo
 
 ## 📋 Requisitos
 
@@ -19,11 +20,10 @@ Este proyecto está diseñado para 🕵️‍♂️ extraer información de dive
 - 📦 Dependencias en `requirements.txt`
 - 🏛️ MySQL instalado
 
-```
 ## 🛠️ Instalación
 
 ```bash
-make venv   # 🔗 Configurar entorno virtual
+make venv      # 🔗 Configurar entorno virtual
 make install   # 📥 Instalar dependencias
 ```
 
@@ -36,21 +36,49 @@ maintainer: mgrl39
 version: 1.0
 scrape_website: www.cinesa.es
 github_repo: gadget
-
-database:
-  host: "localhost"
-  port: 3306
-  user: "gadget_user"
-  password: "supersegura"
-  name: "gadget_db"
 ```
 
 ## 🎯 Uso
 
 ```bash
-make run   # 🤖 Ejecutar el scraper
-make test   # ✅ Ejecutar pruebas
-make clean   # 🧹 Limpiar archivos temporales
+make run      # 🤖 Ejecutar el scraper
+make test     # ✅ Ejecutar pruebas
+make clean    # 🧹 Limpiar archivos temporales
+```
+
+## 🖥️ Panel de Control
+
+Gadget incluye un panel web interactivo para gestionar todas las operaciones:
+
+```bash
+python gadget_panel.py   # 🌐 Iniciar el panel web
+```
+
+Características del panel:
+- 🌙 Modo oscuro/claro
+- 📋 Historial de comandos
+- 🔍 Búsqueda de acciones
+- 📊 Visualización mejorada de resultados
+- 📱 Diseño responsive
+
+El panel estará disponible en: http://localhost:5000
+
+## 📄 Estructura del Proyecto
+
+```
+gadget/
+├── config/               # Configuración
+├── makefiles/            # Submódulos de Makefile
+├── scripts/              # Scripts de utilidad
+├── templates/            # Plantillas HTML para el panel
+├── static/               # Recursos estáticos (CSS, JS)
+│   └── css/
+│       └── styles.css    # Estilos del panel
+├── utils/                # Utilidades de Python
+├── checkers/             # Verificadores de configuración
+├── purgers/              # Herramientas de limpieza
+├── Makefile              # Automatización principal
+└── gadget_panel.py       # Panel de control web
 ```
 
 ## 📜 Licencia
