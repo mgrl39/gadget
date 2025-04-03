@@ -44,7 +44,7 @@ purge-db:  # 🗑️ Elimina la base de datos
 	@python3 purgers/purge_db.py
 
 .PHONY: panel
-panel:  # 🖥️ Inicia el panel web de control
+panel: venv install  # 🖥️ Inicia el panel web de control
 	@echo "🌐 Iniciando panel web en http://localhost:5000..."
-	@bash -c "source venv/bin/activate && pip install flask && python gadget_panel.py"
+	@bash -c "source venv/bin/activate && pip install flask && python panels/gadget_panel.py"
 

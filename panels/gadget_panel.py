@@ -4,10 +4,12 @@ import os
 import re
 import json
 
-app = Flask(__name__)
+app = Flask(__name__, 
+            static_folder='../static',
+            template_folder='../templates')
 
-# Directorio raíz del proyecto
-ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+# Directorio raíz del proyecto (un nivel arriba de panels/)
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def clean_ansi(text):
     """Eliminar códigos ANSI"""
@@ -22,12 +24,23 @@ def index():
 @app.route('/static/<path:path>')
 def send_static(path):
     """Servir archivos estáticos"""
-    return send_from_directory('static', path)
+    return send_from_directory('../static', path)
 
 @app.route('/rules')
 def get_rules():
     """Obtener reglas del Makefile con descripciones"""
     try:
+        # Imprimir el directorio actual para depuración
+        print(f"Directorio raíz detectado: {ROOT_DIR}")
+        
+        # Verificar si existe el Makefile
+        makefile_path = os.path.join(ROOT_DIR, 'Makefile')
+        if not os.path.exists(makefile_path):
+            print(f"⚠️ No se encontró el Makefile en: {makefile_path}")
+            return jsonify({"categories": {}, "error": "No se encontró el Makefile"})
+        else:
+            print(f"✅ Makefile encontrado en: {makefile_path}")
+        
         result = subprocess.run(
             f'cd {ROOT_DIR} && make help',
             shell=True, capture_output=True, text=True
@@ -58,6 +71,8 @@ def get_rules():
                                 category = "Configuración"
                             elif name in ['test', 'run', 'scrape']:
                                 category = "Ejecución"
+                            elif name == 'panel':
+                                category = "Panel Web"
                             
                             rules.append({
                                 "name": name,
@@ -75,8 +90,8 @@ def get_rules():
         
         return jsonify({"categories": categories})
     except Exception as e:
-        print(f"Error: {e}")
-        return jsonify({"categories": {}})
+        print(f"Error al obtener reglas: {e}")
+        return jsonify({"categories": {}, "error": str(e)})
 
 @app.route('/run', methods=['POST'])
 def run_command():
