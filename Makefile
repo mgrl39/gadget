@@ -33,11 +33,18 @@ show-rule: # 📙 Muestra la regla que le indiques en RULE=
 		fi; \
 	fi
 
-check:
+.PHONY: check
+check:  # 🔍 Verifica el estado de la configuración
 	@echo "Verificando estado de la configuración..."
 	@bash checkers/setup_checker.sh
 
-purge-db:
+.PHONY: purge-db
+purge-db:  # 🗑️ Elimina la base de datos
 	@echo "Eliminando base de datos..."
 	@python3 purgers/purge_db.py
+
+.PHONY: panel
+panel:  # 🖥️ Inicia el panel web de control
+	@echo "🌐 Iniciando panel web en http://localhost:5000..."
+	@bash -c "source venv/bin/activate && pip install flask && python gadget_panel.py"
 

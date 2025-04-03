@@ -29,7 +29,7 @@ make install   # 📥 Instalar dependencias
 
 ## ⚙️ Configuración
 
-Edita `config/config.yaml` con las credenciales de tu base de datos:
+Edita `config/config.yaml`:
 
 ```yaml
 maintainer: mgrl39
@@ -51,7 +51,7 @@ make clean    # 🧹 Limpiar archivos temporales
 Gadget incluye un panel web interactivo para gestionar todas las operaciones:
 
 ```bash
-python gadget_panel.py   # 🌐 Iniciar el panel web
+make panel    # 🌐 Iniciar el panel web de control
 ```
 
 Características del panel:
