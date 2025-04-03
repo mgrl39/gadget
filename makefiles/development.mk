@@ -11,4 +11,9 @@ run: setup-db  # 🚀 Ejecuta el programa principal
 .PHONY: test
 test: install  # 🧪 Ejecuta los tests
 	@echo "✅ Ejecutando tests..."
-	@bash -c "source venv/bin/activate && pytest tests/" 
+	@bash -c "source venv/bin/activate && pytest tests/"
+
+.PHONY: panel
+panel:  # 🖥️ Inicia el panel web de control
+	@echo "🌐 Preparando panel web..."
+	@bash -c "source venv/bin/activate && pip install flask && python panels/gadget_panel.py" 
