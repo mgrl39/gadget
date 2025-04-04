@@ -1,18 +1,15 @@
 #!/bin/bash
 
-# Colores
 BLUE="\033[1;34m"
 GREEN="\033[1;32m"
 YELLOW="\033[1;33m"
 RED="\033[1;31m"
 RESET="\033[0m"
-
-# Definir versiones mínimas requeridas
 PYTHON_MIN="3.8"
 PHP_MIN="7.4"
 MYSQL_MIN="5.7"
 
-# Función para comparar versiones
+# Función para comparar versiones (de un random de twitter)
 version_greater_equal() {
   awk -v ver1="$1" -v ver2="$2" 'BEGIN {
         split(ver1, a, ".");

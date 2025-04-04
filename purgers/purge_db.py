@@ -5,11 +5,11 @@ import subprocess
 # Añadir el directorio raíz del proyecto a sys.path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Ahora podemos importar módulos desde la raíz del proyecto
+# Importar módulos desde la raíz del proyecto
 from utils.config_loader import load_config
 
+# Cargar configuración
 def purge_database():
-    # Cargar configuración (solo desde .env para seguridad)
     config = load_config(only_env=True)
     db_config = config["database"]
     

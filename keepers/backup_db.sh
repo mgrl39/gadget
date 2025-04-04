@@ -1,12 +1,10 @@
 #!/bin/bash
 
 # Verificar si yq está instalado
-if ! command -v yq &> /dev/null; then
-    echo "❌ Error: 'yq' no encontrado. Instálalo con:"
-    echo "    sudo apt install yq  # (Debian/Ubuntu)"
-    echo "    brew install yq       # (MacOS con Homebrew)"
-    echo "    sudo dnf install yq   # (Fedora)"
-    exit 1
+if ! command -v yq &>/dev/null; then
+  echo "❌ Error: 'yq' no encontrado. Instálalo con:"
+  echo "    sudo apt install yq  # (Debian/Ubuntu)"
+  exit 1
 fi
 
 # Configuración
@@ -23,9 +21,8 @@ mkdir -p "$BACKUP_DIR"
 
 # Realizar el backup
 echo "📂 Creando backup de la base de datos: $DB_NAME"
-mysqldump -h "$DB_HOST" -u "$DB_USER" -p"$DB_PASS" "$DB_NAME" > "$BACKUP_FILE"
+mysqldump -h "$DB_HOST" -u "$DB_USER" -p"$DB_PASS" "$DB_NAME" >"$BACKUP_FILE"
 
 # Comprimir el backup
 gzip "$BACKUP_FILE"
 echo "✅ Backup guardado en: ${BACKUP_FILE}.gz"
-

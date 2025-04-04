@@ -1,4 +1,4 @@
-# Makefile principal para el proyecto Gadget
+# Gadget's Makefile
 # mgrl39
 .DEFAULT_GOAL := help
 # Incluir módulos específicos

@@ -161,13 +161,13 @@ def get_command_info():
     except Exception as e:
         return jsonify({"status": "error", "message": str(e)}), 500
 
+# Crear directorio templates si no existe
+# Crear directorio static si no existe
 if __name__ == '__main__':
-    # Crear directorio templates si no existe
     templates_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
     if not os.path.exists(templates_dir):
         os.makedirs(templates_dir)
     
-    # Crear directorio static si no existe
     static_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
     if not os.path.exists(static_dir):
         os.makedirs(static_dir)

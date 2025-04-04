@@ -18,7 +18,7 @@ dependencies:
   - mysql-server
 
 # 🔑 Credenciales 
-# IMPORTANTE: En producción, usa variables de entorno o .env 
+# IMPORTANTE: En producción, usar .env
 database:
   host: "localhost"
   port: 3306
