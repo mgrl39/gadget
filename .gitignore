@@ -16,8 +16,8 @@ requirements.txt.lock
 
 # Configuración sensible
 config.py
-.env
-.env.*
+#.env
+#.env.*
 
 # Archivos descargados o generados por el script init.sh
 google-chrome-stable_current_amd64.deb
