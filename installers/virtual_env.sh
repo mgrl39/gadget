@@ -23,4 +23,4 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 echo "✅ Instalación completada. Para ejecutar el scraper, usa:"
-echo "   source venv/bin/activate && python run.py"
+echo "   source venv/bin/activate && python scrapers/cinesa_detalles_scraper.py"

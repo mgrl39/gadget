@@ -15,15 +15,14 @@ dependencies:
   - python3
   - python3-pip
   - python3-venv
-  - mysql-server
 
-# 🔑 Credenciales 
+# 🔑 Credenciales
 # IMPORTANTE: En producción, usar .env
 database:
   host: "localhost"
-  port: 3306
-  user: "root"
-  password: "Root@1234"
+  port: 5432 # Puerto por defecto de PostgreSQL
+  user: "postgres"
+  password: "postgres"
   name: "cinedb"
 
 # 🔍 Configuración del Web Scraper
@@ -31,7 +30,7 @@ scraper:
   user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
   headless: true
   max_retries: 3
-  timeout: 10  # segundos
+  timeout: 10 # segundos
 
 # 🔎 Opciones de Testing
 testing:
@@ -47,6 +46,5 @@ docker:
 
 # 📜 Logging y Debug
 logging:
-  level: "DEBUG"  # Opciones: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: "DEBUG" # Opciones: DEBUG, INFO, WARNING, ERROR, CRITICAL
   log_file: "logs/gadget.log"
-

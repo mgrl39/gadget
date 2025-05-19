@@ -8,12 +8,11 @@ include makefiles/development.mk
 include makefiles/deploy.mk
 
 .PHONY: help
-help:  # 📖 Muestra los comandos disponibles
-	@echo "\033[1;34m🔹 Comandos disponibles:\033[0m"
-	@for file in $(MAKEFILE_LIST); do \
-		grep -E '^[a-zA-Z0-9_-]+:.*?#' $$file | sort | \
-		awk '{gsub(/:.*/,"",$$1); printf "  \033[1;36m%-20s\033[0m %s\n", $$1, substr($$0, index($$0,"#")+1)}'; \
-	done | sort
+help:  # 📚 Muestra esta ayuda
+	@echo "🚀 SCRAPER CINESA"
+	@echo ""
+	@echo "Comandos disponibles:"
+	@grep -E '^[a-zA-Z_-]+:.*?# .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?# "}; {printf "  \033[36m%-15s\033[0m %s\n", $$1, $$2}'
 
 # Comando para mostrar reglas específicas
 .PHONY: show-rule
@@ -47,4 +46,28 @@ purge-db:  # 🗑️ Elimina la base de datos
 scrape-cinesa: venv install  # 🎬 Ejecuta el scraper de películas de Cinesa
 	@echo "🎬 Ejecutando scraper de Cinesa..."
 	@bash -c "source venv/bin/activate && python scrapers/cinesa_scraper.py"
+
+# 🚀 SCRAPER CINESA
+
+.PHONY: install
+install:  # 🔧 Instala el entorno virtual y dependencias
+	@echo "🚀 Instalando entorno virtual y dependencias..."
+	@bash installers/virtual_env.sh
+
+.PHONY: clean
+clean:  # 🧹 Limpia archivos temporales y elimina el entorno virtual
+	@echo "🔥 Eliminando archivos temporales y el entorno virtual..."
+	rm -rf build venv __pycache__ *.log
+	find . -type d -name "__pycache__" -exec rm -rf {} +
+	@echo "✅ Limpieza completada."
+
+.PHONY: scrape
+scrape:  # 🕸️ Ejecuta el scraper de Cinesa
+	@echo "🕸️ Ejecutando scraper de Cinesa..."
+	@bash -c "source venv/bin/activate && python scrapers/cinesa_detalles_scraper.py"
+
+.PHONY: scrape-list
+scrape-list:  # 📋 Obtiene solo la lista de películas sin detalles
+	@echo "📋 Obteniendo lista de películas..."
+	@bash -c "source venv/bin/activate && python scrapers/cinesa_detalles_scraper.py --solo-lista"
 
