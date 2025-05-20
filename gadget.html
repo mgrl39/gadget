@@ -351,15 +351,53 @@ Todo en Python para máxima simplicidad y mantenibilidad.</p>
         &#34;&#34;&#34;Ejecuta el scraper con los argumentos proporcionados&#34;&#34;&#34;
         print(&#34;🕸️ Ejecutando scraper de Cinesa...&#34;)
         
-        # Importar el scraper dinámicamente
-        scraper_path = Path(&#34;scrapers/cinesa_detalles_scraper.py&#34;)
-        if not scraper_path.exists():
-            print(f&#34;❌ Scraper no encontrado en {scraper_path}&#34;)
-            return False
+        # Si se especifica una película individual, usar el extractor específico
+        if args.pelicula:
+            try:
+                from selenium import webdriver
+                from selenium.webdriver.chrome.options import Options
+                
+                # Configurar opciones de Chrome
+                chrome_options = Options()
+                chrome_options.add_argument(&#34;--headless&#34;)
+                chrome_options.add_argument(&#34;--no-sandbox&#34;)
+                chrome_options.add_argument(&#34;--disable-dev-shm-usage&#34;)
+                chrome_options.add_argument(&#34;--disable-gpu&#34;)
+                chrome_options.add_argument(&#34;--window-size=1920x1080&#34;)
+                
+                # Inicializar navegador
+                driver = webdriver.Chrome(options=chrome_options)
+                
+                # Crear extractor
+                extractor = CinesaMovieExtractor(driver=driver)
+                
+                # Asegurarse de que la URL es completa
+                url_pelicula = args.pelicula
+                if not url_pelicula.startswith(&#39;http&#39;):
+                    url_pelicula = f&#34;https://www.cinesa.es/peliculas/{url_pelicula}&#34;
+                
+                # Extraer detalles
+                print(f&#34;🔍 Extrayendo detalles de: {url_pelicula}&#34;)
+                movie_data = extractor.extract_movie_details(url_pelicula)
+                
+                # Cerrar navegador
+                driver.quit()
+                
+                if movie_data:
+                    print(f&#34;✅ Detalles extraídos correctamente para: {movie_data.get(&#39;titulo&#39;, &#39;Película desconocida&#39;)}&#34;)
+                    return True
+                else:
+                    print(&#34;❌ No se pudieron extraer los detalles de la película&#34;)
+                    return False
+                    
+            except Exception as e:
+                print(f&#34;❌ Error al extraer detalles de película: {e}&#34;)
+                return False
         
+        # Si no se especifica película individual, ejecutar el scraper normal
         try:
             # Construir comando para ejecutar el scraper
-            cmd = [sys.executable, str(scraper_path)]
+            cmd = [sys.executable, &#34;scrapers/cinesa_detalles_scraper.py&#34;]
             
             if args.solo_lista:
                 cmd.append(&#34;--solo-lista&#34;)
@@ -369,8 +407,6 @@ Todo en Python para máxima simplicidad y mantenibilidad.</p>
                 cmd.extend([&#34;--hilos&#34;, str(args.hilos)])
             if args.demora:
                 cmd.extend([&#34;--demora&#34;, str(args.demora)])
-            if args.pelicula:
-                cmd.extend([&#34;--pelicula&#34;, args.pelicula])
             
             # Ejecutar el scraper
             subprocess.run(cmd, check=True)
@@ -563,15 +599,53 @@ Todo en Python para máxima simplicidad y mantenibilidad.</p>
     &#34;&#34;&#34;Ejecuta el scraper con los argumentos proporcionados&#34;&#34;&#34;
     print(&#34;🕸️ Ejecutando scraper de Cinesa...&#34;)
     
-    # Importar el scraper dinámicamente
-    scraper_path = Path(&#34;scrapers/cinesa_detalles_scraper.py&#34;)
-    if not scraper_path.exists():
-        print(f&#34;❌ Scraper no encontrado en {scraper_path}&#34;)
-        return False
+    # Si se especifica una película individual, usar el extractor específico
+    if args.pelicula:
+        try:
+            from selenium import webdriver
+            from selenium.webdriver.chrome.options import Options
+            
+            # Configurar opciones de Chrome
+            chrome_options = Options()
+            chrome_options.add_argument(&#34;--headless&#34;)
+            chrome_options.add_argument(&#34;--no-sandbox&#34;)
+            chrome_options.add_argument(&#34;--disable-dev-shm-usage&#34;)
+            chrome_options.add_argument(&#34;--disable-gpu&#34;)
+            chrome_options.add_argument(&#34;--window-size=1920x1080&#34;)
+            
+            # Inicializar navegador
+            driver = webdriver.Chrome(options=chrome_options)
+            
+            # Crear extractor
+            extractor = CinesaMovieExtractor(driver=driver)
+            
+            # Asegurarse de que la URL es completa
+            url_pelicula = args.pelicula
+            if not url_pelicula.startswith(&#39;http&#39;):
+                url_pelicula = f&#34;https://www.cinesa.es/peliculas/{url_pelicula}&#34;
+            
+            # Extraer detalles
+            print(f&#34;🔍 Extrayendo detalles de: {url_pelicula}&#34;)
+            movie_data = extractor.extract_movie_details(url_pelicula)
+            
+            # Cerrar navegador
+            driver.quit()
+            
+            if movie_data:
+                print(f&#34;✅ Detalles extraídos correctamente para: {movie_data.get(&#39;titulo&#39;, &#39;Película desconocida&#39;)}&#34;)
+                return True
+            else:
+                print(&#34;❌ No se pudieron extraer los detalles de la película&#34;)
+                return False
+                
+        except Exception as e:
+            print(f&#34;❌ Error al extraer detalles de película: {e}&#34;)
+            return False
     
+    # Si no se especifica película individual, ejecutar el scraper normal
     try:
         # Construir comando para ejecutar el scraper
-        cmd = [sys.executable, str(scraper_path)]
+        cmd = [sys.executable, &#34;scrapers/cinesa_detalles_scraper.py&#34;]
         
         if args.solo_lista:
             cmd.append(&#34;--solo-lista&#34;)
@@ -581,8 +655,6 @@ Todo en Python para máxima simplicidad y mantenibilidad.</p>
             cmd.extend([&#34;--hilos&#34;, str(args.hilos)])
         if args.demora:
             cmd.extend([&#34;--demora&#34;, str(args.demora)])
-        if args.pelicula:
-            cmd.extend([&#34;--pelicula&#34;, args.pelicula])
         
         # Ejecutar el scraper
         subprocess.run(cmd, check=True)

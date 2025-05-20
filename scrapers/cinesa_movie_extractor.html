@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="generator" content="pdoc3 0.11.6">
+<title>scrapers.cinesa_movie_extractor API documentation</title>
+<meta name="description" content="Extractor específico para detalles de películas de Cinesa">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/sanitize.min.css" integrity="sha512-y1dtMcuvtTMJc1yPgEqF0ZjQbhnc/bFhyvIyVNb9Zk5mIGtqVaAB1Ttl28su8AvFMOY0EwRbAe+HCLqj6W7/KA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/typography.min.css" integrity="sha512-Y1DYSb995BAfxobCkKepB1BqJJTPrOp3zPL74AWFugHHmmdcvO+C48WLrUOlhGMc0QG7AE3f7gmvvcrmX2fDoA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:1.5em;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:2em 0 .50em 0}h3{font-size:1.4em;margin:1.6em 0 .7em 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .2s ease-in-out}a:visited{color:#503}a:hover{color:#b62}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900;font-weight:bold}pre code{font-size:.8em;line-height:1.4em;padding:1em;display:block}code{background:#f3f3f3;font-family:"DejaVu Sans Mono",monospace;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source > summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible;min-width:max-content}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em 1em;margin:1em 0}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul ul{padding-left:1em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => {
+hljs.configure({languages: ['bash', 'css', 'diff', 'graphql', 'ini', 'javascript', 'json', 'plaintext', 'python', 'python-repl', 'rust', 'shell', 'sql', 'typescript', 'xml', 'yaml']});
+hljs.highlightAll();
+/* Collapse source docstrings */
+setTimeout(() => {
+[...document.querySelectorAll('.hljs.language-python > .hljs-string')]
+.filter(el => el.innerHTML.length > 200 && ['"""', "'''"].includes(el.innerHTML.substring(0, 3)))
+.forEach(el => {
+let d = document.createElement('details');
+d.classList.add('hljs-string');
+d.innerHTML = '<summary>"""</summary>' + el.innerHTML.substring(3);
+el.replaceWith(d);
+});
+}, 100);
+})</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>scrapers.cinesa_movie_extractor</code></h1>
+</header>
+<section id="section-intro">
+<p>Extractor específico para detalles de películas de Cinesa</p>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="scrapers.cinesa_movie_extractor.CinesaMovieExtractor"><code class="flex name class">
+<span>class <span class="ident">CinesaMovieExtractor</span></span>
+<span>(</span><span>driver=None, base_url='https://www.cinesa.es', data_dir='data')</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class CinesaMovieExtractor:
+    &#34;&#34;&#34;Clase para extraer información detallada de películas de Cinesa&#34;&#34;&#34;
+    
+    def __init__(self, driver=None, base_url=&#34;https://www.cinesa.es&#34;, data_dir=&#34;data&#34;):
+        &#34;&#34;&#34;
+        Inicializar el extractor
+        
+        Args:
+            driver: WebDriver de Selenium (opcional)
+            base_url: URL base de Cinesa
+            data_dir: Directorio para guardar datos
+        &#34;&#34;&#34;
+        self.driver = driver
+        self.base_url = base_url
+        
+        # Directorios para guardar datos
+        self.data_dir = data_dir
+        self.movies_dir = os.path.join(data_dir, &#34;peliculas&#34;)
+        self.images_dir = os.path.join(data_dir, &#34;imagenes&#34;)
+        
+        # Crear directorios si no existen
+        os.makedirs(self.movies_dir, exist_ok=True)
+        os.makedirs(self.images_dir, exist_ok=True)
+        
+        # Headers para requests
+        self.headers = {
+            &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36&#34;,
+            &#34;Accept&#34;: &#34;text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8&#34;,
+            &#34;Accept-Language&#34;: &#34;es-ES,es;q=0.8,en-US;q=0.5,en;q=0.3&#34;,
+        }
+    
+    def extract_movie_details(self, url):
+        &#34;&#34;&#34;
+        Extrae detalles completos de una película desde su URL
+        
+        Args:
+            url: URL de la película en Cinesa
+            
+        Returns:
+            dict: Detalles de la película
+        &#34;&#34;&#34;
+        logger.info(f&#34;Extrayendo detalles de: {url}&#34;)
+        
+        try:
+            # Verificar si tenemos un driver de Selenium
+            if self.driver is None:
+                logger.error(&#34;No se proporcionó un WebDriver. No se pueden extraer detalles.&#34;)
+                return None
+            
+            # Navegar a la URL
+            self.driver.get(url)
+            time.sleep(random.uniform(2, 4))  # Esperar carga
+            
+            # Manejar cookies si aparecen
+            try:
+                cookie_button = WebDriverWait(self.driver, 5).until(
+                    EC.element_to_be_clickable((By.ID, &#34;onetrust-accept-btn-handler&#34;))
+                )
+                cookie_button.click()
+                time.sleep(1)
+            except (TimeoutException, NoSuchElementException):
+                logger.info(&#34;No se encontró el botón de cookies o ya estaban aceptadas&#34;)
+            
+            # Extraer título
+            titulo = self._extract_element_text(
+                [&#34;.v-film-title__text&#34;, &#34;h1.film-title&#34;, &#34;.movie-title h1&#34;]
+            )
+            
+            # Extraer imagen/póster
+            poster_url = self._extract_image_url(
+                [&#34;.v-film-image__img img&#34;, &#34;.film-poster img&#34;, &#34;.movie-poster img&#34;]
+            )
+            
+            # Descargar y guardar la imagen
+            poster_path = None
+            if poster_url:
+                poster_path = self._download_image(poster_url, titulo)
+            
+            # Extraer duración
+            duracion = self._extract_element_text(
+                [&#34;.v-film-runtime .v-display-text-part&#34;, &#34;.film-runtime&#34;, &#34;.duration&#34;]
+            )
+            
+            # Extraer fecha de estreno
+            fecha_estreno = self._extract_element_text(
+                [&#34;.v-film-release-date .v-display-text-part&#34;, &#34;.release-date&#34;, &#34;.film-release-date&#34;]
+            )
+            
+            # Extraer géneros
+            generos = self._extract_multiple_elements_text(
+                [&#34;.v-film-genres__list .v-description-list-item__description&#34;, &#34;.film-genres span&#34;, &#34;.genres&#34;]
+            )
+            
+            # Extraer clasificación
+            clasificacion = self._extract_element_text(
+                [&#34;.v-film-classification-description .v-description-list-item__description&#34;, &#34;.film-classification&#34;, &#34;.rating&#34;]
+            )
+            
+            # Extraer directores
+            directores = self._extract_element_text(
+                [&#34;.v-film-directors .v-display-text-part&#34;, &#34;.film-directors&#34;, &#34;.directors&#34;]
+            )
+            
+            # Extraer actores
+            actores_text = self._extract_element_text(
+                [&#34;.v-film-actors .v-display-text-part&#34;, &#34;.film-actors&#34;, &#34;.actors&#34;]
+            )
+            actores = [actor.strip() for actor in actores_text.split(&#34;,&#34;)] if actores_text else []
+            
+            # Extraer sinopsis
+            sinopsis = self._extract_element_text(
+                [&#34;.v-film-synopsis .v-display-text-part&#34;, &#34;.film-synopsis&#34;, &#34;.synopsis&#34;]
+            )
+            
+            # Extraer ID de la película
+            movie_id = None
+            url_parts = url.rstrip(&#39;/&#39;).split(&#39;/&#39;)
+            if url_parts and len(url_parts) &gt;= 2:
+                movie_id = url_parts[-1]
+            
+            # Construir el objeto de película
+            movie_data = {
+                &#34;id&#34;: movie_id,
+                &#34;titulo&#34;: titulo,
+                &#34;url&#34;: url,
+                &#34;poster_url&#34;: poster_url,
+                &#34;poster_local&#34;: poster_path,
+                &#34;duracion&#34;: duracion,
+                &#34;fecha_estreno&#34;: fecha_estreno,
+                &#34;generos&#34;: generos,
+                &#34;clasificacion&#34;: clasificacion,
+                &#34;directores&#34;: directores,
+                &#34;actores&#34;: actores,
+                &#34;sinopsis&#34;: sinopsis,
+                &#34;fecha_scraping&#34;: datetime.now().isoformat()
+            }
+            
+            # Guardar los datos
+            self._save_movie_data(movie_data)
+            
+            return movie_data
+            
+        except Exception as e:
+            logger.error(f&#34;Error al extraer detalles de {url}: {e}&#34;)
+            return {
+                &#34;url&#34;: url,
+                &#34;error&#34;: str(e),
+                &#34;fecha_scraping&#34;: datetime.now().isoformat()
+            }
+    
+    def _extract_element_text(self, selectors):
+        &#34;&#34;&#34;Extrae texto de un elemento usando múltiples selectores posibles&#34;&#34;&#34;
+        for selector in selectors:
+            try:
+                element = self.driver.find_element(By.CSS_SELECTOR, selector)
+                if element:
+                    return element.text.strip()
+            except NoSuchElementException:
+                continue
+        return &#34;&#34;
+    
+    def _extract_multiple_elements_text(self, selectors):
+        &#34;&#34;&#34;Extrae texto de múltiples elementos usando múltiples selectores posibles&#34;&#34;&#34;
+        for selector in selectors:
+            try:
+                elements = self.driver.find_elements(By.CSS_SELECTOR, selector)
+                if elements:
+                    return [element.text.strip() for element in elements]
+            except NoSuchElementException:
+                continue
+        return []
+    
+    def _extract_image_url(self, selectors):
+        &#34;&#34;&#34;Extrae URL de una imagen usando múltiples selectores posibles&#34;&#34;&#34;
+        for selector in selectors:
+            try:
+                element = self.driver.find_element(By.CSS_SELECTOR, selector)
+                if element:
+                    return element.get_attribute(&#34;src&#34;)
+            except NoSuchElementException:
+                continue
+        return None
+    
+    def _download_image(self, image_url, title):
+        &#34;&#34;&#34;Descarga y guarda una imagen&#34;&#34;&#34;
+        if not image_url:
+            return None
+            
+        try:
+            # Crear nombre de archivo seguro
+            safe_title = re.sub(r&#39;[^\w\s-]&#39;, &#39;&#39;, title).strip().replace(&#39; &#39;, &#39;_&#39;)
+            if not safe_title:
+                safe_title = &#39;imagen_sin_titulo&#39;
+                
+            # Extraer extensión o usar .jpg
+            extension = os.path.splitext(image_url.split(&#39;?&#39;)[0])[1]
+            if not extension:
+                extension = &#39;.jpg&#39;
+                
+            image_path = os.path.join(self.images_dir, f&#34;{safe_title}{extension}&#34;)
+            
+            # Verificar si ya existe
+            if os.path.exists(image_path):
+                logger.info(f&#34;La imagen para &#39;{title}&#39; ya existe: {image_path}&#34;)
+                return image_path
+                
+            # Descargar la imagen
+            response = requests.get(image_url, headers=self.headers, timeout=10)
+            response.raise_for_status()
+            
+            # Guardar la imagen
+            with open(image_path, &#39;wb&#39;) as f:
+                f.write(response.content)
+                
+            # Optimizar la imagen
+            try:
+                img = Image.open(image_path)
+                img.save(image_path, optimize=True, quality=85)
+            except Exception as e:
+                logger.warning(f&#34;No se pudo optimizar la imagen: {e}&#34;)
+                
+            logger.info(f&#34;Imagen guardada para &#39;{title}&#39;: {image_path}&#34;)
+            return image_path
+            
+        except Exception as e:
+            logger.error(f&#34;Error al descargar imagen para &#39;{title}&#39;: {e}&#34;)
+            return None
+    
+    def _save_movie_data(self, movie_data):
+        &#34;&#34;&#34;Guarda los datos de la película en un archivo JSON&#34;&#34;&#34;
+        import json
+        
+        # Crear nombre de archivo seguro
+        title = movie_data.get(&#34;titulo&#34;, &#34;pelicula_sin_titulo&#34;)
+        safe_title = re.sub(r&#39;[^\w\s-]&#39;, &#39;&#39;, title).strip().replace(&#39; &#39;, &#39;_&#39;)
+        if not safe_title:
+            safe_title = &#39;pelicula_sin_titulo&#39;
+            
+        # Añadir fecha al nombre del archivo
+        date_str = datetime.now().strftime(&#34;%Y%m%d&#34;)
+        file_path = os.path.join(self.movies_dir, f&#34;{safe_title}_{date_str}.json&#34;)
+        
+        # Guardar como JSON
+        try:
+            with open(file_path, &#39;w&#39;, encoding=&#39;utf-8&#39;) as f:
+                json.dump(movie_data, f, ensure_ascii=False, indent=2)
+            logger.info(f&#34;Datos guardados para &#39;{title}&#39;: {file_path}&#34;)
+            return file_path
+        except Exception as e:
+            logger.error(f&#34;Error al guardar datos para &#39;{title}&#39;: {e}&#34;)
+            return None </code></pre>
+</details>
+<div class="desc"><p>Clase para extraer información detallada de películas de Cinesa</p>
+<p>Inicializar el extractor</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>driver</code></strong></dt>
+<dd>WebDriver de Selenium (opcional)</dd>
+<dt><strong><code>base_url</code></strong></dt>
+<dd>URL base de Cinesa</dd>
+<dt><strong><code>data_dir</code></strong></dt>
+<dd>Directorio para guardar datos</dd>
+</dl></div>
+<h3>Methods</h3>
+<dl>
+<dt id="scrapers.cinesa_movie_extractor.CinesaMovieExtractor.extract_movie_details"><code class="name flex">
+<span>def <span class="ident">extract_movie_details</span></span>(<span>self, url)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def extract_movie_details(self, url):
+    &#34;&#34;&#34;
+    Extrae detalles completos de una película desde su URL
+    
+    Args:
+        url: URL de la película en Cinesa
+        
+    Returns:
+        dict: Detalles de la película
+    &#34;&#34;&#34;
+    logger.info(f&#34;Extrayendo detalles de: {url}&#34;)
+    
+    try:
+        # Verificar si tenemos un driver de Selenium
+        if self.driver is None:
+            logger.error(&#34;No se proporcionó un WebDriver. No se pueden extraer detalles.&#34;)
+            return None
+        
+        # Navegar a la URL
+        self.driver.get(url)
+        time.sleep(random.uniform(2, 4))  # Esperar carga
+        
+        # Manejar cookies si aparecen
+        try:
+            cookie_button = WebDriverWait(self.driver, 5).until(
+                EC.element_to_be_clickable((By.ID, &#34;onetrust-accept-btn-handler&#34;))
+            )
+            cookie_button.click()
+            time.sleep(1)
+        except (TimeoutException, NoSuchElementException):
+            logger.info(&#34;No se encontró el botón de cookies o ya estaban aceptadas&#34;)
+        
+        # Extraer título
+        titulo = self._extract_element_text(
+            [&#34;.v-film-title__text&#34;, &#34;h1.film-title&#34;, &#34;.movie-title h1&#34;]
+        )
+        
+        # Extraer imagen/póster
+        poster_url = self._extract_image_url(
+            [&#34;.v-film-image__img img&#34;, &#34;.film-poster img&#34;, &#34;.movie-poster img&#34;]
+        )
+        
+        # Descargar y guardar la imagen
+        poster_path = None
+        if poster_url:
+            poster_path = self._download_image(poster_url, titulo)
+        
+        # Extraer duración
+        duracion = self._extract_element_text(
+            [&#34;.v-film-runtime .v-display-text-part&#34;, &#34;.film-runtime&#34;, &#34;.duration&#34;]
+        )
+        
+        # Extraer fecha de estreno
+        fecha_estreno = self._extract_element_text(
+            [&#34;.v-film-release-date .v-display-text-part&#34;, &#34;.release-date&#34;, &#34;.film-release-date&#34;]
+        )
+        
+        # Extraer géneros
+        generos = self._extract_multiple_elements_text(
+            [&#34;.v-film-genres__list .v-description-list-item__description&#34;, &#34;.film-genres span&#34;, &#34;.genres&#34;]
+        )
+        
+        # Extraer clasificación
+        clasificacion = self._extract_element_text(
+            [&#34;.v-film-classification-description .v-description-list-item__description&#34;, &#34;.film-classification&#34;, &#34;.rating&#34;]
+        )
+        
+        # Extraer directores
+        directores = self._extract_element_text(
+            [&#34;.v-film-directors .v-display-text-part&#34;, &#34;.film-directors&#34;, &#34;.directors&#34;]
+        )
+        
+        # Extraer actores
+        actores_text = self._extract_element_text(
+            [&#34;.v-film-actors .v-display-text-part&#34;, &#34;.film-actors&#34;, &#34;.actors&#34;]
+        )
+        actores = [actor.strip() for actor in actores_text.split(&#34;,&#34;)] if actores_text else []
+        
+        # Extraer sinopsis
+        sinopsis = self._extract_element_text(
+            [&#34;.v-film-synopsis .v-display-text-part&#34;, &#34;.film-synopsis&#34;, &#34;.synopsis&#34;]
+        )
+        
+        # Extraer ID de la película
+        movie_id = None
+        url_parts = url.rstrip(&#39;/&#39;).split(&#39;/&#39;)
+        if url_parts and len(url_parts) &gt;= 2:
+            movie_id = url_parts[-1]
+        
+        # Construir el objeto de película
+        movie_data = {
+            &#34;id&#34;: movie_id,
+            &#34;titulo&#34;: titulo,
+            &#34;url&#34;: url,
+            &#34;poster_url&#34;: poster_url,
+            &#34;poster_local&#34;: poster_path,
+            &#34;duracion&#34;: duracion,
+            &#34;fecha_estreno&#34;: fecha_estreno,
+            &#34;generos&#34;: generos,
+            &#34;clasificacion&#34;: clasificacion,
+            &#34;directores&#34;: directores,
+            &#34;actores&#34;: actores,
+            &#34;sinopsis&#34;: sinopsis,
+            &#34;fecha_scraping&#34;: datetime.now().isoformat()
+        }
+        
+        # Guardar los datos
+        self._save_movie_data(movie_data)
+        
+        return movie_data
+        
+    except Exception as e:
+        logger.error(f&#34;Error al extraer detalles de {url}: {e}&#34;)
+        return {
+            &#34;url&#34;: url,
+            &#34;error&#34;: str(e),
+            &#34;fecha_scraping&#34;: datetime.now().isoformat()
+        }</code></pre>
+</details>
+<div class="desc"><p>Extrae detalles completos de una película desde su URL</p>
+<h2 id="args">Args</h2>
+<dl>
+<dt><strong><code>url</code></strong></dt>
+<dd>URL de la película en Cinesa</dd>
+</dl>
+<h2 id="returns">Returns</h2>
+<dl>
+<dt><code>dict</code></dt>
+<dd>Detalles de la película</dd>
+</dl></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3>Super-module</h3>
+<ul>
+<li><code><a title="scrapers" href="index.html">scrapers</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="scrapers.cinesa_movie_extractor.CinesaMovieExtractor" href="#scrapers.cinesa_movie_extractor.CinesaMovieExtractor">CinesaMovieExtractor</a></code></h4>
+<ul class="">
+<li><code><a title="scrapers.cinesa_movie_extractor.CinesaMovieExtractor.extract_movie_details" href="#scrapers.cinesa_movie_extractor.CinesaMovieExtractor.extract_movie_details">extract_movie_details</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.11.6</a>.</p>
+</footer>
+</body>
+</html>
