@@ -214,6 +214,20 @@ class CinesaScraper:
     def descargar_imagen_base64(self, img_element, titulo):
         """Descarga imagen desde un elemento <img> obteniendo su base64 o src"""
         try:
+            # Modificar el src para obtener mejor calidad si es posible
+            img_src = img_element.get_attribute("src")
+            if img_src and "moviexchange.com" in img_src and "width=" in img_src:
+                # Modificar el atributo src para obtener mejor calidad
+                self.driver.execute_script(
+                    "arguments[0].setAttribute('src', arguments[1])",
+                    img_element,
+                    re.sub(r'width=\d+', 'width=900', img_src)
+                )
+                logger.info(f"URL de imagen modificada para mejor calidad")
+                
+                # Dar tiempo para que cargue la nueva imagen
+                time.sleep(1)
+            
             # Crear nombre de archivo seguro
             titulo_seguro = re.sub(r'[^\w\s-]', '', titulo).strip().replace(' ', '_')
             if not titulo_seguro:
@@ -265,7 +279,8 @@ class CinesaScraper:
             # Optimizar imagen
             try:
                 img = Image.open(ruta_imagen)
-                img.save(ruta_imagen, optimize=True, quality=85)
+                logger.info(f"Resolución de imagen: {img.width}x{img.height}")
+                img.save(ruta_imagen, optimize=True, quality=95)
             except Exception as e:
                 logger.warning(f"No se pudo optimizar la imagen: {e}")
                 
