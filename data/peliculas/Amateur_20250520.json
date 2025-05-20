@@ -1,0 +1,28 @@
+{
+    "titulo": "Amateur",
+    "url": "https://www.cinesa.es/peliculas/-amateur/HO00002080/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 3m",
+    "fecha_estreno": "11 abril 2025",
+    "generos": [
+        "Acción"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "James Hawes",
+    "actores": [
+        "Jon Bernthal",
+        "Caitriona Balfe",
+        "Michael Stuhlbarg",
+        "Laurence Fishburne",
+        "Adrian Martinez",
+        "Holt  McCallany",
+        "Rachel Brosnahan",
+        "Danny Sapani",
+        "Rami Malek",
+        "Julianne Nicholson"
+    ],
+    "sinopsis": "Cuando un agente de la CIA descubre que unos terroristas están detrás de la muerte de su prometida en un sospechoso accidente aéreo, recibe un entrenamiento especial para tramar su venganza.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Amateur.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:41:16.765576"
+}

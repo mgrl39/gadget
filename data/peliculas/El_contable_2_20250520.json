@@ -1,0 +1,26 @@
+{
+    "titulo": "El contable 2",
+    "url": "https://www.cinesa.es/peliculas/el-contable-2/HO00002127/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 12m",
+    "fecha_estreno": "25 abril 2025",
+    "generos": [
+        "Acción",
+        "Drama",
+        "Crimen"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "Gavin O'Connor",
+    "actores": [
+        "Daniella Pineda",
+        "Cynthia Addai-Robinson",
+        "Allison Robertson",
+        "Grant Harvey",
+        "Ben Affleck",
+        "J.K Simmons"
+    ],
+    "sinopsis": "Christian Wolff tiene talento para resolver problemas complejos. Cuando un viejo conocido es asesinado, dejando tras de sí un críptico mensaje para \"encontrar al contable\", Wolff se ve obligado a resolver el caso. Al darse cuenta de que son necesarias medidas más extremas, Wolff recluta a su hermano Brax, distanciado y muy letal, para que le ayude. En colaboración con Marybeth Medina, subdirectora del Tesoro de Estados Unidos, descubren una conspiración mortal y se convierten en objetivo de una despiadada red de asesinos que no se detendrán ante nada para mantener sus secretos enterrados.",
+    "poster_local": "/home/dev/gadget/data/imagenes/El_contable_2.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:43:05.367548"
+}

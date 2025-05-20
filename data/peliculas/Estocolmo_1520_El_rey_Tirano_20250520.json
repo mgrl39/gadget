@@ -1,0 +1,29 @@
+{
+    "titulo": "Estocolmo 1520. El rey Tirano",
+    "url": "https://www.cinesa.es/peliculas/estocolmo-1520-el-rey-tirano/HO00002235/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 57m",
+    "fecha_estreno": "16 mayo 2025",
+    "generos": [
+        "Acción",
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "Mikael Håfström",
+    "actores": [
+        "Claes  Bang",
+        "Ulrich Thomsen",
+        "Jakob Oftebro",
+        "Mikkel Boe Følsgaard",
+        "Emily Beecham",
+        "Sophie Cookson",
+        "Alba August",
+        "Adam Pålsson",
+        "Thomas Chaanhing",
+        "Wilf Scolding"
+    ],
+    "sinopsis": "En 1520, el infame rey danés Cristián II, sediento de poder, está decidido a arrebatar la corona sueca a Sten Sture, cueste lo que cueste. Entre tanto, las hermanas Freja y Anne prometen solemnemente vengarse de los hombres que asesinaron brutalmente a su familia. Todo llega a su punto álgido en el corazón de Estocolmo, donde las hermanas se ven arrastradas a una despiadada lucha política entre Suecia y Dinamarca que culminará en el conocido como Baño de Sangre de Estocolmo, perpetrado por el apodado \"Cristián el Tirano\".",
+    "poster_local": "/home/dev/gadget/data/imagenes/Estocolmo_1520_El_rey_Tirano.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:43:36.675771"
+}

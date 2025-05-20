@@ -1,0 +1,21 @@
+{
+    "titulo": "Presunción de inocencia",
+    "url": "https://www.cinesa.es/peliculas/presuncion-de-inocencia/HO00002129/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 55m",
+    "fecha_estreno": "9 mayo 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": null,
+    "actores": [
+        "Grégory  Gadebois",
+        "Daniel Auteuil",
+        "Sidse  Babett Knudsen"
+    ],
+    "sinopsis": "Desde que logró la absolución de un asesino reincidente, el abogado Jean Monier no acepta más casos criminales. Sin embargo, al conocer a Nicolas Milik, un padre de familia acusado de asesinar a su esposa, Monier se siente conmovido y sus certezas se tambalean. Convencido de la inocencia de su cliente, está dispuesto a hacer todo lo posible para ganar el juicio. Lo que parece un caso ordinario, este le pondrá a prueba, redescubriendo así el verdadero sentido de su vocación.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Presunción_de_inocencia.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:46:08.389439"
+}

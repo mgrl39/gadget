@@ -1,0 +1,22 @@
+{
+    "titulo": "Una quinta portuguesa",
+    "url": "https://www.cinesa.es/peliculas/una-quinta-portuguesa/HO00002210/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 55m",
+    "fecha_estreno": "9 mayo 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "Apta para todos los públicos",
+    "directores": "Avelina Prat",
+    "actores": [
+        "Manolo Solo",
+        "Rita Cabaço",
+        "Maria  de Medeiros",
+        "Branka Katic"
+    ],
+    "sinopsis": "La desaparición de su mujer deja a Fernando, un tranquilo profesor de geografía, completamente devastado. Sin rumbo, suplanta la identidad de otro hombre como jardinero de una quinta portuguesa, donde establece una inesperada amistad con la dueña, adentrándose en una nueva vida que no le pertenece.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Una_quinta_portuguesa.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:47:31.434161"
+}

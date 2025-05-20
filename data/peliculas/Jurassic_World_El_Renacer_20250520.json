@@ -1,0 +1,29 @@
+{
+    "titulo": "Jurassic World: El Renacer",
+    "url": "https://www.cinesa.es/peliculas/jurassic-world-el-renacer/HO00002241/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 6m",
+    "fecha_estreno": "2 julio 2025",
+    "generos": [
+        "Acción",
+        "Aventura",
+        "Thriller"
+    ],
+    "clasificacion": "Pendiente de Calificación.",
+    "directores": "Gareth Edwards",
+    "actores": [
+        "Manuel Garcia-Rulfo",
+        "Mahershala Ali",
+        "Jonathan Bailey",
+        "Ed Skrein",
+        "Philippine Velge",
+        "Luna Blaise",
+        "David Iacono",
+        "Audrina Miranda",
+        "Bechir Sylvain"
+    ],
+    "sinopsis": "Cinco años después de los eventos de \"Dominion\", sigue a Zora (Scarlett Johansson), que dirige un equipo para conseguir material genético de tres enormes dinosaurios. Cuando la operación se cruza con una familia, quedan varados en una isla donde hacen un siniestro descubrimiento.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Jurassic_World_El_Renacer.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:44:14.990191"
+}

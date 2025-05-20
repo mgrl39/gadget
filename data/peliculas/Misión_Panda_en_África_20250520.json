@@ -1,0 +1,30 @@
+{
+    "titulo": "Misión Panda en África",
+    "url": "https://www.cinesa.es/peliculas/mision-panda-en-africa/HO00002125/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 29m",
+    "fecha_estreno": "11 abril 2025",
+    "generos": [
+        "Comedia",
+        "Aventura",
+        "Animación"
+    ],
+    "clasificacion": "Apta para todos los públicos. Esp. Recom. Infancia",
+    "directores": "Richard  Claus, Karsten Kiilerich",
+    "actores": [
+        "Thom Hoffman",
+        "Adrian Pang",
+        "Yootha Wong-Loi-Sing",
+        "Georgina Verbaan",
+        "Maurits Delchot",
+        "Namisa Mdalose",
+        "Silas Lekgoathi",
+        "Candice Modiselle",
+        "Sthandile Nkosi",
+        "Thulani Nzonzo"
+    ],
+    "sinopsis": "Ping, un joven panda lleno de curiosidad y valentía, emprende un increíble viaje cuando su mejor amigo, el dragón Jielong, es secuestrado y llevado a África. En su travesía, Ping cruza océanos peligrosos y llega a un continente lleno de maravillas y desafíos. Allí descubre un mundo completamente desconocido, donde deberá enfrentarse a hipopótamos aterradores, hienas sospechosas y gorilas sabios mientras intenta rescatar a Jielong y frustrar los planes de un león malvado, decidido a tomar el control de la selva. Con ingenio, valentía y el poder de la amistad, Ping no solo demostrará que los héroes vienen en todas las formas y tamaños, sino que cambiará para siempre el destino de quienes cruzan su camino. Una aventura llena de risas, emoción y grandes lecciones, perfecta para disfrutar en familia.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Misión_Panda_en_África.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:45:31.033783"
+}

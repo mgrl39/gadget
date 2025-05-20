@@ -1,0 +1,23 @@
+{
+    "titulo": "Lo que queda de ti",
+    "url": "https://www.cinesa.es/peliculas/lo-que-queda-de-ti/HO00002239/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 31m",
+    "fecha_estreno": "16 mayo 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Gala Gracia",
+    "actores": [
+        "Ruy de Carvalho",
+        "Ángela Cervantes",
+        "Anna Tenta",
+        "Laia Manzanares",
+        "Juan José Ballesta"
+    ],
+    "sinopsis": "A sus 25 años, Sara está a punto de grabar un disco de jazz en Nueva York, pero, tras la muerte de su padre, regresa a su pueblo natal en el Pirineo oscense. Allí hereda, junto a su hermana, una granja y un rebaño de ovejas. Invadida por la culpa de no haber estado con su padre en sus últimos años, rechaza la propuesta de vender el rebaño y decide preservar su legado. Sara está dispuesta a luchar por ello, aunque eso implique renunciar a la carrera musical que tanto esfuerzo le ha costado.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Lo_que_queda_de_ti.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:45:07.837042"
+}

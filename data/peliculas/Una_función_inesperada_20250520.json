@@ -1,0 +1,26 @@
+{
+    "titulo": "Una función inesperada",
+    "url": "https://www.cinesa.es/peliculas/una-funcion-inesperada/HO00002242/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 41m",
+    "fecha_estreno": "23 mayo 2025",
+    "generos": [
+        "Comedia"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Tony  Goldwyn",
+    "actores": [
+        "Bobby Cannavale",
+        "Rainn Wilson",
+        "Vera Farmiga",
+        "Rose Byrne",
+        "Joe Pacheco",
+        "William Fitzgerald",
+        "Robert De Niro",
+        "Whoopi Goldberg"
+    ],
+    "sinopsis": "Max Brandel es un guionista de televisión que arriesga su exitosa carrera y su matrimonio para intentar convertirse en un cómico de stand-up, pero no tiene éxito. Max tiene entonces que mudarse con su padre Stan, un talentoso pero excéntrico chef reconvertido en portero. Cuando Max tiene un gran desacuerdo con su exesposa y su nueva pareja sobre cómo lidiar con el autismo de su hijo Ezra, de 9 años, Max decide tomar una solución drástica: secuestrar a Ezra y llevarlo de viaje por todo el país.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Una_función_inesperada.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:47:17.171435"
+}

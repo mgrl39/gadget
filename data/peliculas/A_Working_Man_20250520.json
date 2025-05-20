@@ -1,0 +1,28 @@
+{
+    "titulo": "A Working Man",
+    "url": "https://www.cinesa.es/peliculas/a-working-man/HO00002060/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 56m",
+    "fecha_estreno": "28 marzo 2025",
+    "generos": [
+        "Acción",
+        "Thriller"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "David Ayer",
+    "actores": [
+        "Jason Statham",
+        "Jason Flemyng",
+        "Maximilian Osinski",
+        "Cokey Falkow",
+        "Michael Pena",
+        "Noemi Gonzalez",
+        "Arianna Rivas",
+        "Emmett J Scanlan",
+        "Eve Mauro"
+    ],
+    "sinopsis": "Levon Cade ha dejado atrás su profesión para ser \"honrado\" y trabajar en la construcción. Quiere vivir una vida sencilla y ser un buen padre para su hija. Pero cuando Jenny, la hija adolescente de su jefe, desaparece, se ve obligado a volver a emplear las habilidades que le convirtieron en una figura legendaria en el oscuro mundo de las operaciones encubiertas. Su búsqueda de la universitaria desaparecida le lleva al corazón de una siniestra conspiración criminal que creará una reacción en cadena que amenazará su nueva forma de vida.",
+    "poster_local": "/home/dev/gadget/data/imagenes/A_Working_Man.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:41:50.208693"
+}

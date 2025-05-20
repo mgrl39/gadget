@@ -1,0 +1,21 @@
+{
+    "titulo": "Blindado",
+    "url": "https://www.cinesa.es/peliculas/blindado/HO00002226/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 34m",
+    "fecha_estreno": "30 mayo 2025",
+    "generos": [
+        "Terror",
+        "Thriller"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "David Yarovesky",
+    "actores": [
+        "Anthony Hopkins",
+        "Bill  Skarsgård"
+    ],
+    "sinopsis": "Cuando Eddie (Bill Skarsgård) se cuela en un todoterreno de lujo para robarlo, cae en una trampa mortal tendida por William (Anthony Hopkins), el dueño del vehículo que ha decidido tomar la justicia por su mano y controla remotamente el vehículo. Sin posibilidad de escape, Eddie debe luchar por sobrevivir esta venganza mortal.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Blindado.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:42:20.208599"
+}

@@ -1,0 +1,23 @@
+{
+    "titulo": "High School Musical 3 (V.O. sin subtítulos)",
+    "url": "https://www.cinesa.es/peliculas/high-school-musical-3-vo-sin-subtitulos/HO00002256/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 54m",
+    "fecha_estreno": "20 junio 2025",
+    "generos": [
+        "Comedia",
+        "Familiar",
+        "Drama"
+    ],
+    "clasificacion": "Apta para todos los públicos",
+    "directores": "Kenny Ortega",
+    "actores": [
+        "Zac Efron",
+        "Vanessa Hudgens",
+        "Ashley Tisdale"
+    ],
+    "sinopsis": "Troy y Gabriella acaban el último año y deben enfrentarse a la perspectiva de una separación, ya que su futuro universitario toma direcciones diferentes. Junto al resto de los Wildcats, ponen en escena un elaborado musical de primavera que refleja sus experiencias, esperanzas y miedos de cara al futuro.",
+    "poster_local": "/home/dev/gadget/data/imagenes/High_School_Musical_3_VO_sin_subtítulos.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:44:00.323666"
+}

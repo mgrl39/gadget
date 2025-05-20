@@ -1,0 +1,25 @@
+{
+    "titulo": "Until Dawn",
+    "url": "https://www.cinesa.es/peliculas/until-dawn/HO00002115/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 42m",
+    "fecha_estreno": "25 abril 2025",
+    "generos": [
+        "Terror"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "David F.  Sandberg",
+    "actores": [
+        "Belmont Cameli",
+        "Ella Rubin",
+        "Michael Cimino",
+        "Odessa A’zion",
+        "Ji-young Yoo",
+        "Maia Mitchell",
+        "Peter Stormare"
+    ],
+    "sinopsis": "Un año después de la misteriosa desaparición de su hermana Melanie, Clover y sus amigas se dirigen al remoto valle donde desapareció en busca de respuestas. Mientras exploran un centro de visitantes abandonado, son acechadas por un asesino enmascarado que las mata una a una de forma horrible… para después despertar y encontrarse de nuevo al principio de la misma noche. Atrapadas en el valle, se ven obligadas a revivir la historia una y otra vez, solo que cada vez la amenaza asesina es diferente y aún más aterradora que la anterior. Con la esperanza menguando, el grupo pronto se da cuenta de que solo les queda un número limitado de muertes y que la única forma de escapar es sobrevivir hasta el amanecer.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Until_Dawn.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:40:55.547643"
+}

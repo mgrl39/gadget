@@ -1,0 +1,23 @@
+{
+    "titulo": "Una noche en Zoópolis",
+    "url": "https://www.cinesa.es/peliculas/una-noche-en-zoopolis/HO00002161/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 31m",
+    "fecha_estreno": "25 abril 2025",
+    "generos": [
+        "Comedia",
+        "Aventura",
+        "Animación"
+    ],
+    "clasificacion": "Apta para todos los públicos. Esp. Recom. Infancia",
+    "directores": "Rodrigo Perez-Castro, Ricardo Curtis",
+    "actores": [
+        "Gabbi Kosmidis",
+        "Scott Thompson",
+        "Paul Sun-Hyung Lee"
+    ],
+    "sinopsis": "Una noche un meteorito se estrella en un zoológico desatando un virus que transforma a los animales en viscosos zombis. Gracie, una joven loba, se une en la aventura a Dan, un puma salvaje recién llegado, para idear un plan y que los animales vuelvan a la normalidad. Junto a la ayuda de un grupo de supervivientes muy peculiares se embarcan en la peligrosa misión de rescatar el zoo del apocalipsis.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Una_noche_en_Zoópolis.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:47:24.222707"
+}

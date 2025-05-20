@@ -1,0 +1,30 @@
+{
+    "titulo": "Thunderbolts*",
+    "url": "https://www.cinesa.es/peliculas/thunderboltsstar/HO00002038/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 6m",
+    "fecha_estreno": "30 abril 2025",
+    "generos": [
+        "Acción",
+        "Aventura"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Jake Schreier",
+    "actores": [
+        "Sebastian Stan",
+        "Florence  Pugh",
+        "David Harbour",
+        "Hannah  John-Kamen",
+        "Wyatt Russell",
+        "Geraldine Viswanathan",
+        "Olga Kurylenko",
+        "Lewis Pullman",
+        "Julia Louis-Dreyfus",
+        "Chris Bauer",
+        "Wendell Pierce"
+    ],
+    "sinopsis": "Thunderbolts* reúne un equipo poco convencional de antihéroes: Yelena Belova, Bucky Barnes, Red Guardian, Ghost, Taskmaster y John Walker. Después de verse atrapados en una trampa mortal urdida por Valentina Allegra de Fontaine, estos marginados deben embarcarse en una peligrosa misión que les obligará a enfrentarse a los recovecos más oscuros de su pasado. Este grupo disfuncional, ¿se romperá en pedazos o encontrará la redención y se unirá para formar algo mucho más grande antes de que sea demasiado tarde?",
+    "poster_local": "/home/dev/gadget/data/imagenes/Thunderbolts.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:40:49.041959"
+}

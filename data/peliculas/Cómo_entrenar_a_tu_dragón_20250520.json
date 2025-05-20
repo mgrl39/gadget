@@ -1,0 +1,31 @@
+{
+    "titulo": "Cómo entrenar a tu dragón",
+    "url": "https://www.cinesa.es/peliculas/como-entrenar-a-tu-dragon/HO00002140/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 5m",
+    "fecha_estreno": "12 junio 2025",
+    "generos": [
+        "Acción",
+        "Familiar",
+        "Aventura"
+    ],
+    "clasificacion": "Pendiente de Calificación.",
+    "directores": "Dean DeBlois",
+    "actores": [
+        "Mason Thames",
+        "Bronwyn James",
+        "Nico Parker",
+        "Nick Frost",
+        "Julian Dennison",
+        "Gabriel Howell",
+        "Harry Trevaldwyn",
+        "Ruth Codd",
+        "Peter Serafinowicz",
+        "Murray McArthur",
+        "Gerard Butler"
+    ],
+    "sinopsis": "El creativo visionario Dean DeBlois, nominado en tres ocasiones a los Oscar®, ganador de un Globo de Oro y responsable de la aclamada trilogía de DreamWorks Animation CÓMO ENTRENAR A TU DRAGÓN, reimagina en una impresionante propuesta de acción real la aventura que dio comienzo al fenómeno de esta saga.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Cómo_entrenar_a_tu_dragón.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:40:41.853801"
+}

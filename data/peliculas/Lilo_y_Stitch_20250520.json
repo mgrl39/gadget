@@ -1,0 +1,28 @@
+{
+    "titulo": "Lilo y Stitch",
+    "url": "https://www.cinesa.es/peliculas/lilo-y-stitch/HO00002084/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 47m",
+    "fecha_estreno": "23 mayo 2025",
+    "generos": [
+        "Acción",
+        "Comedia",
+        "Aventura"
+    ],
+    "clasificacion": "Apta para todos los públicos. Esp. Recom. Infancia",
+    "directores": "Dean Fleischer-Camp",
+    "actores": [
+        "Hannah Waddingham",
+        "Billy Magnussen",
+        "Chris Sanders",
+        "Maia Kealoha",
+        "Sydney Elizebeth Agudong",
+        "Tia Carrere",
+        "Courtney B. Vance",
+        "Zach Galifianakis"
+    ],
+    "sinopsis": "“Lilo y Stitch” es una nueva versión en acción real del clásico animado de Disney de 2002. Narra la historia tremendamente divertida y conmovedora de una niña hawaiana solitaria y un extraterrestre fugitivo que la ayuda a recomponer su familia rota. La película está dirigida por Dean Fleischer Camp, el realizador nominado al Oscar® al mando del largometraje animado “Marcel, la concha con zapatos”. Sus protagonistas son Maia Kealoha, Sydney Elizebeth Agudong, Billy Magnussen, Tia Carrere, Hannah Waddingham y Chris Sanders, junto con Courtney B. Vance y Zach Galifianakis. Jonathan Eirich y Dan Lin son los productores de “Lilo & Stitch”, con Tom Peitzman y Ryan Halprin como productores ejecutivos.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Lilo_y_Stitch.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:40:21.202860"
+}

@@ -1,0 +1,24 @@
+{
+    "titulo": "Los Tortuga",
+    "url": "https://www.cinesa.es/peliculas/los-tortuga/HO00002243/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 50m",
+    "fecha_estreno": "23 mayo 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Belén Funes",
+    "actores": [
+        "Bianca Kovacs",
+        "Antonia  Zegers",
+        "Sebastián Haro",
+        "Sara Gómez",
+        "Elvira Lara",
+        "Padi Padilla"
+    ],
+    "sinopsis": "Delia y su hija Anabel se enfrentan de forma muy distinta al duelo por el padre. Entre los campos de olivos de Jaén y las calles de Barcelona, las dos mujeres se enfrentarán a la incertidumbre de su futuro haciendo equilibrios entre el amor y el dolor, la ternura y la dureza.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Los_Tortuga.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:45:15.724181"
+}

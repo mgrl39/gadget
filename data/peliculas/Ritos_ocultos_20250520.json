@@ -1,0 +1,25 @@
+{
+    "titulo": "Ritos ocultos",
+    "url": "https://www.cinesa.es/peliculas/ritos-ocultos/HO00002182/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 44m",
+    "fecha_estreno": "30 abril 2025",
+    "generos": [
+        "Terror"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "William Brent Bell",
+    "actores": [
+        "Tuppence Middleton",
+        "Ralph Ineson",
+        "Matt Stokoe",
+        "Alexa Goodall",
+        "Rosalind March",
+        "Anton Valensi",
+        "David Langham"
+    ],
+    "sinopsis": "Después de que la reverenda Rebecca, su marido y su hija se instalaran en un pequeño pueblo, la niña desaparece durante la celebración anual de la cosecha. Esto desencadenará una búsqueda desesperada que sacará a la luz la oscura historia de la comunidad. Cuanto más se acercan a dar con ella, más secretos emergen y Rebecca deberá decidir cuánto está dispuesta a sacrificar para rescatar a su hija de un destino cruel y macabro.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Ritos_ocultos.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:46:16.122375"
+}

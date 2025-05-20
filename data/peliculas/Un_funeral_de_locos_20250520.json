@@ -1,0 +1,25 @@
+{
+    "titulo": "Un funeral de locos",
+    "url": "https://www.cinesa.es/peliculas/un-funeral-de-locos/HO00002122/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 35m",
+    "fecha_estreno": "11 abril 2025",
+    "generos": [
+        "Comedia"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Manuel Gómez Pereira",
+    "actores": [
+        "Belén Rueda",
+        "Esmeralda  Pimentel",
+        "Antonio Resines",
+        "Quim Gutiérrez",
+        "Hugo Silva",
+        "Ernesto Alterio",
+        "Inma Cuesta"
+    ],
+    "sinopsis": "Los miembros de una familia acuden a despedir al patriarca, recién fallecido. Pero lo que debería ser un sentido velatorio se convierte en una reunión enloquecida cuando uno de los asistentes saca a la luz el secreto mejor guardado del difunto.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Un_funeral_de_locos.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:47:10.331699"
+}

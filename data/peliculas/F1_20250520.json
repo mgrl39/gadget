@@ -1,0 +1,25 @@
+{
+    "titulo": "F1",
+    "url": "https://www.cinesa.es/peliculas/f1/HO00002052/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 33m",
+    "fecha_estreno": "27 junio 2025",
+    "generos": [
+        "Drama",
+        "Deportes"
+    ],
+    "clasificacion": "Pendiente de Calificación.",
+    "directores": "Joseph Kosinski",
+    "actores": [
+        "Javier Bardem",
+        "Brad Pitt",
+        "Kerry Condon",
+        "Damson Idris",
+        "Tobias Menzies",
+        "Kim Bodnia"
+    ],
+    "sinopsis": "De la mano de Apple Original Films y de los realizadores de Top Gun: Maverick llega F1, un trepidante largometraje de acción protagonizado por Brad Pitt y dirigido por Joseph Kosinski. La película está producida por Jerry Bruckheimer, Kosinski, el siete veces campeón de Fórmula 1 del mundo Lewis Hamilton, Pitt, Dede Gardner, Jeremy Kleiner, y Chad Oman.",
+    "poster_local": "/home/dev/gadget/data/imagenes/F1.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:43:43.621453"
+}

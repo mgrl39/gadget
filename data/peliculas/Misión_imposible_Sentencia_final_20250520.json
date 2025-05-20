@@ -1,0 +1,37 @@
+{
+    "titulo": "Misión imposible: Sentencia final",
+    "url": "https://www.cinesa.es/peliculas/mision-imposible-sentencia-final/HO00002146/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 49m",
+    "fecha_estreno": "23 mayo 2025",
+    "generos": [
+        "Acción",
+        "Aventura",
+        "Thriller"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Christopher McQuarrie",
+    "actores": [
+        "Angela Bassett",
+        "Shea Whigham",
+        "Pom  Klementieff",
+        "Ving Rhames",
+        "Simon Pegg",
+        "Rebecca Ferguson",
+        "Frederick Schmidt",
+        "Hayley  Atwell",
+        "Esai Morales",
+        "Mariela Garriga",
+        "Tom Cruise",
+        "Charles Parnell",
+        "Greg Tarzan Davis",
+        "Janet McTeer",
+        "Henry  Czerny",
+        "Vanessa Kirby",
+        "Nick Offerman"
+    ],
+    "sinopsis": "Nuestras vidas son la suma de nuestras decisiones. Tom Cruise es Ethan Hunt en \"Misión: Imposible- Sentencia Final\".",
+    "poster_local": "/home/dev/gadget/data/imagenes/Misión_imposible_Sentencia_final.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:40:27.784223"
+}
