@@ -1,0 +1,739 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="generator" content="pdoc3 0.11.6">
+<title>gadget API documentation</title>
+<meta name="description" content="Gadget - Herramienta de scraping de Cinesa con gestión de base de datos
+Todo en Python para máxima simplicidad y mantenibilidad.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/sanitize.min.css" integrity="sha512-y1dtMcuvtTMJc1yPgEqF0ZjQbhnc/bFhyvIyVNb9Zk5mIGtqVaAB1Ttl28su8AvFMOY0EwRbAe+HCLqj6W7/KA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/13.0.0/typography.min.css" integrity="sha512-Y1DYSb995BAfxobCkKepB1BqJJTPrOp3zPL74AWFugHHmmdcvO+C48WLrUOlhGMc0QG7AE3f7gmvvcrmX2fDoA==" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css" crossorigin>
+<style>:root{--highlight-color:#fe9}.flex{display:flex !important}body{line-height:1.5em}#content{padding:20px}#sidebar{padding:1.5em;overflow:hidden}#sidebar > *:last-child{margin-bottom:2cm}.http-server-breadcrumbs{font-size:130%;margin:0 0 15px 0}#footer{font-size:.75em;padding:5px 30px;border-top:1px solid #ddd;text-align:right}#footer p{margin:0 0 0 1em;display:inline-block}#footer p:last-child{margin-right:30px}h1,h2,h3,h4,h5{font-weight:300}h1{font-size:2.5em;line-height:1.1em}h2{font-size:1.75em;margin:2em 0 .50em 0}h3{font-size:1.4em;margin:1.6em 0 .7em 0}h4{margin:0;font-size:105%}h1:target,h2:target,h3:target,h4:target,h5:target,h6:target{background:var(--highlight-color);padding:.2em 0}a{color:#058;text-decoration:none;transition:color .2s ease-in-out}a:visited{color:#503}a:hover{color:#b62}.title code{font-weight:bold}h2[id^="header-"]{margin-top:2em}.ident{color:#900;font-weight:bold}pre code{font-size:.8em;line-height:1.4em;padding:1em;display:block}code{background:#f3f3f3;font-family:"DejaVu Sans Mono",monospace;padding:1px 4px;overflow-wrap:break-word}h1 code{background:transparent}pre{border-top:1px solid #ccc;border-bottom:1px solid #ccc;margin:1em 0}#http-server-module-list{display:flex;flex-flow:column}#http-server-module-list div{display:flex}#http-server-module-list dt{min-width:10%}#http-server-module-list p{margin-top:0}.toc ul,#index{list-style-type:none;margin:0;padding:0}#index code{background:transparent}#index h3{border-bottom:1px solid #ddd}#index ul{padding:0}#index h4{margin-top:.6em;font-weight:bold}@media (min-width:200ex){#index .two-column{column-count:2}}@media (min-width:300ex){#index .two-column{column-count:3}}dl{margin-bottom:2em}dl dl:last-child{margin-bottom:4em}dd{margin:0 0 1em 3em}#header-classes + dl > dd{margin-bottom:3em}dd dd{margin-left:2em}dd p{margin:10px 0}.name{background:#eee;font-size:.85em;padding:5px 10px;display:inline-block;min-width:40%}.name:hover{background:#e0e0e0}dt:target .name{background:var(--highlight-color)}.name > span:first-child{white-space:nowrap}.name.class > span:nth-child(2){margin-left:.4em}.inherited{color:#999;border-left:5px solid #eee;padding-left:1em}.inheritance em{font-style:normal;font-weight:bold}.desc h2{font-weight:400;font-size:1.25em}.desc h3{font-size:1em}.desc dt code{background:inherit}.source > summary,.git-link-div{color:#666;text-align:right;font-weight:400;font-size:.8em;text-transform:uppercase}.source summary > *{white-space:nowrap;cursor:pointer}.git-link{color:inherit;margin-left:1em}.source pre{max-height:500px;overflow:auto;margin:0}.source pre code{font-size:12px;overflow:visible;min-width:max-content}.hlist{list-style:none}.hlist li{display:inline}.hlist li:after{content:',\2002'}.hlist li:last-child:after{content:none}.hlist .hlist{display:inline;padding-left:1em}img{max-width:100%}td{padding:0 .5em}.admonition{padding:.1em 1em;margin:1em 0}.admonition-title{font-weight:bold}.admonition.note,.admonition.info,.admonition.important{background:#aef}.admonition.todo,.admonition.versionadded,.admonition.tip,.admonition.hint{background:#dfd}.admonition.warning,.admonition.versionchanged,.admonition.deprecated{background:#fd4}.admonition.error,.admonition.danger,.admonition.caution{background:lightpink}</style>
+<style media="screen and (min-width: 700px)">@media screen and (min-width:700px){#sidebar{width:30%;height:100vh;overflow:auto;position:sticky;top:0}#content{width:70%;max-width:100ch;padding:3em 4em;border-left:1px solid #ddd}pre code{font-size:1em}.name{font-size:1em}main{display:flex;flex-direction:row-reverse;justify-content:flex-end}.toc ul ul,#index ul ul{padding-left:1em}.toc > ul > li{margin-top:.5em}}</style>
+<style media="print">@media print{#sidebar h1{page-break-before:always}.source{display:none}}@media print{*{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important}a[href]:after{content:" (" attr(href) ")";font-size:90%}a[href][title]:after{content:none}abbr[title]:after{content:" (" attr(title) ")"}.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h1,h2,h3,h4,h5,h6{page-break-after:avoid}}</style>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js" integrity="sha512-D9gUyxqja7hBtkWpPWGt9wfbfaMGVt9gnyCvYa+jojwwPHLCzUm5i8rpk7vD7wNee9bA35eYIjobYPaQuKS1MQ==" crossorigin></script>
+<script>window.addEventListener('DOMContentLoaded', () => {
+hljs.configure({languages: ['bash', 'css', 'diff', 'graphql', 'ini', 'javascript', 'json', 'plaintext', 'python', 'python-repl', 'rust', 'shell', 'sql', 'typescript', 'xml', 'yaml']});
+hljs.highlightAll();
+/* Collapse source docstrings */
+setTimeout(() => {
+[...document.querySelectorAll('.hljs.language-python > .hljs-string')]
+.filter(el => el.innerHTML.length > 200 && ['"""', "'''"].includes(el.innerHTML.substring(0, 3)))
+.forEach(el => {
+let d = document.createElement('details');
+d.classList.add('hljs-string');
+d.innerHTML = '<summary>"""</summary>' + el.innerHTML.substring(3);
+el.replaceWith(d);
+});
+}, 100);
+})</script>
+</head>
+<body>
+<main>
+<article id="content">
+<header>
+<h1 class="title">Module <code>gadget</code></h1>
+</header>
+<section id="section-intro">
+<p>Gadget - Herramienta de scraping de Cinesa con gestión de base de datos
+Todo en Python para máxima simplicidad y mantenibilidad.</p>
+</section>
+<section>
+</section>
+<section>
+</section>
+<section>
+<h2 class="section-title" id="header-functions">Functions</h2>
+<dl>
+<dt id="gadget.main"><code class="name flex">
+<span>def <span class="ident">main</span></span>(<span>)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def main():
+    &#34;&#34;&#34;Función principal que maneja la interfaz de línea de comandos&#34;&#34;&#34;
+    parser = argparse.ArgumentParser(description=&#34;Gadget - Herramienta de scraping de Cinesa&#34;)
+    subparsers = parser.add_subparsers(dest=&#34;command&#34;, help=&#34;Comando a ejecutar&#34;)
+    
+    # Comando: setup
+    setup_parser = subparsers.add_parser(&#34;setup&#34;, help=&#34;Configurar entorno y base de datos&#34;)
+    
+    # Comando: scrape
+    scrape_parser = subparsers.add_parser(&#34;scrape&#34;, help=&#34;Ejecutar scraper&#34;)
+    scrape_parser.add_argument(&#34;--solo-lista&#34;, &#34;-l&#34;, action=&#34;store_true&#34;, help=&#34;Obtener solo lista de películas&#34;)
+    scrape_parser.add_argument(&#34;--max&#34;, &#34;-m&#34;, type=int, help=&#34;Número máximo de películas&#34;)
+    scrape_parser.add_argument(&#34;--hilos&#34;, &#34;-t&#34;, type=int, help=&#34;Número de hilos para procesamiento&#34;)
+    scrape_parser.add_argument(&#34;--demora&#34;, &#34;-d&#34;, type=int, help=&#34;Demora entre peticiones en segundos&#34;)
+    scrape_parser.add_argument(&#34;--pelicula&#34;, &#34;-p&#34;, type=str, help=&#34;URL o ID de una película específica&#34;)
+    
+    # Comando: backup
+    backup_parser = subparsers.add_parser(&#34;backup&#34;, help=&#34;Crear backup de la base de datos&#34;)
+    
+    # Comando: purge
+    purge_parser = subparsers.add_parser(&#34;purge&#34;, help=&#34;Purgar la base de datos&#34;)
+    
+    # Comando: clean
+    clean_parser = subparsers.add_parser(&#34;clean&#34;, help=&#34;Limpiar archivos temporales&#34;)
+    
+    args = parser.parse_args()
+    
+    # Crear instancia de la CLI
+    cli = GadgetCLI()
+    
+    # Ejecutar el comando seleccionado
+    if args.command == &#34;setup&#34;:
+        success = cli.setup_venv() and cli.setup_db()
+    elif args.command == &#34;scrape&#34;:
+        success = cli.run_scraper(args)
+    elif args.command == &#34;backup&#34;:
+        success = cli.backup_db()
+    elif args.command == &#34;purge&#34;:
+        success = cli.purge_db()
+    elif args.command == &#34;clean&#34;:
+        success = cli.clean()
+    else:
+        parser.print_help()
+        return 0
+    
+    return 0 if success else 1</code></pre>
+</details>
+<div class="desc"><p>Función principal que maneja la interfaz de línea de comandos</p></div>
+</dd>
+</dl>
+</section>
+<section>
+<h2 class="section-title" id="header-classes">Classes</h2>
+<dl>
+<dt id="gadget.GadgetCLI"><code class="flex name class">
+<span>class <span class="ident">GadgetCLI</span></span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">class GadgetCLI:
+    &#34;&#34;&#34;CLI principal para gestionar el scraper y la base de datos&#34;&#34;&#34;
+    
+    def __init__(self):
+        self.config = load_config()
+        self.db_config = self.config.get(&#34;database&#34;, {})
+        self.backup_dir = Path(&#34;backups&#34;)
+        self.backup_dir.mkdir(exist_ok=True)
+        
+    def setup_venv(self):
+        &#34;&#34;&#34;Configura el entorno virtual e instala dependencias&#34;&#34;&#34;
+        print(&#34;🚀 Configurando entorno virtual...&#34;)
+        
+        venv_path = Path(&#34;venv&#34;)
+        if not venv_path.exists():
+            subprocess.run([sys.executable, &#34;-m&#34;, &#34;venv&#34;, &#34;venv&#34;], check=True)
+            print(&#34;✅ Entorno virtual creado&#34;)
+        else:
+            print(&#34;✅ El entorno virtual ya existe&#34;)
+        
+        # Determinar la ruta al pip del entorno virtual
+        if sys.platform == &#34;win32&#34;:
+            pip_path = &#34;venv\\Scripts\\pip&#34;
+        else:
+            pip_path = &#34;venv/bin/pip&#34;
+        
+        # Instalar dependencias
+        print(&#34;📦 Instalando dependencias...&#34;)
+        subprocess.run([pip_path, &#34;install&#34;, &#34;--upgrade&#34;, &#34;pip&#34;], check=True)
+        subprocess.run([pip_path, &#34;install&#34;, &#34;-r&#34;, &#34;requirements.txt&#34;], check=True)
+        print(&#34;✅ Dependencias instaladas correctamente&#34;)
+        
+        return True
+    
+    def setup_db(self):
+        &#34;&#34;&#34;Configura la base de datos PostgreSQL&#34;&#34;&#34;
+        print(&#34;🗄️ Configurando base de datos PostgreSQL...&#34;)
+        
+        try:
+            # Conectar a PostgreSQL
+            conn = psycopg2.connect(
+                host=self.db_config.get(&#34;host&#34;, &#34;localhost&#34;),
+                port=self.db_config.get(&#34;port&#34;, 5432),
+                user=self.db_config.get(&#34;user&#34;, &#34;postgres&#34;),
+                password=self.db_config.get(&#34;password&#34;, &#34;postgres&#34;),
+                # Conectar a &#39;postgres&#39; por defecto para crear nuestra base de datos
+                database=&#34;postgres&#34;
+            )
+            conn.autocommit = True
+            cursor = conn.cursor()
+            
+            # Crear la base de datos si no existe
+            db_name = self.db_config.get(&#34;name&#34;, &#34;cinedb&#34;)
+            cursor.execute(f&#34;SELECT 1 FROM pg_database WHERE datname = &#39;{db_name}&#39;&#34;)
+            if not cursor.fetchone():
+                cursor.execute(f&#34;CREATE DATABASE {db_name}&#34;)
+                print(f&#34;✅ Base de datos &#39;{db_name}&#39; creada&#34;)
+            else:
+                print(f&#34;✅ Base de datos &#39;{db_name}&#39; ya existe&#34;)
+            
+            # Cerrar conexión a &#39;postgres&#39;
+            cursor.close()
+            conn.close()
+            
+            # Reconectar a nuestra base de datos
+            conn = psycopg2.connect(
+                host=self.db_config.get(&#34;host&#34;, &#34;localhost&#34;),
+                port=self.db_config.get(&#34;port&#34;, 5432),
+                user=self.db_config.get(&#34;user&#34;, &#34;postgres&#34;),
+                password=self.db_config.get(&#34;password&#34;, &#34;postgres&#34;),
+                database=db_name
+            )
+            conn.autocommit = True
+            cursor = conn.cursor()
+            
+            # Aplicar esquema si existe
+            schema_path = Path(&#34;config/schema.sql&#34;)
+            if schema_path.exists():
+                print(&#34;📊 Aplicando esquema de base de datos...&#34;)
+                with open(schema_path, &#34;r&#34;) as f:
+                    schema_sql = f.read()
+                cursor.execute(schema_sql)
+                print(&#34;✅ Esquema aplicado correctamente&#34;)
+            
+            cursor.close()
+            conn.close()
+            
+            return True
+            
+        except Exception as e:
+            print(f&#34;❌ Error configurando la base de datos: {e}&#34;)
+            return False
+    
+    def backup_db(self):
+        &#34;&#34;&#34;Realiza backup de la base de datos PostgreSQL&#34;&#34;&#34;
+        print(&#34;💾 Creando backup de la base de datos...&#34;)
+        
+        try:
+            # Configuración de la base de datos
+            db_host = self.db_config.get(&#34;host&#34;, &#34;localhost&#34;)
+            db_port = self.db_config.get(&#34;port&#34;, 5432)
+            db_user = self.db_config.get(&#34;user&#34;, &#34;postgres&#34;)
+            db_password = self.db_config.get(&#34;password&#34;, &#34;postgres&#34;)
+            db_name = self.db_config.get(&#34;name&#34;, &#34;cinedb&#34;)
+            
+            # Nombre del archivo de backup
+            timestamp = datetime.datetime.now().strftime(&#34;%Y%m%d_%H%M%S&#34;)
+            backup_file = self.backup_dir / f&#34;backup_{db_name}_{timestamp}.sql&#34;
+            
+            # Configurar entorno para pg_dump
+            env = os.environ.copy()
+            env[&#34;PGPASSWORD&#34;] = db_password
+            
+            # Ejecutar pg_dump
+            result = subprocess.run(
+                [
+                    &#34;pg_dump&#34;,
+                    &#34;-h&#34;, str(db_host),
+                    &#34;-p&#34;, str(db_port),
+                    &#34;-U&#34;, db_user,
+                    &#34;-d&#34;, db_name,
+                    &#34;-f&#34;, str(backup_file)
+                ],
+                env=env,
+                check=True,
+                capture_output=True,
+                text=True
+            )
+            
+            # Comprimir el backup
+            with open(backup_file, &#39;rb&#39;) as f_in:
+                with gzip.open(f&#34;{backup_file}.gz&#34;, &#39;wb&#39;) as f_out:
+                    f_out.writelines(f_in)
+            
+            # Eliminar el archivo sin comprimir
+            backup_file.unlink()
+            
+            print(f&#34;✅ Backup guardado en: {backup_file}.gz&#34;)
+            return True
+            
+        except Exception as e:
+            print(f&#34;❌ Error creando backup: {e}&#34;)
+            return False
+    
+    def purge_db(self):
+        &#34;&#34;&#34;Purga la base de datos PostgreSQL&#34;&#34;&#34;
+        print(&#34;🔥 Purgando la base de datos...&#34;)
+        
+        try:
+            # Configuración de la base de datos
+            db_host = self.db_config.get(&#34;host&#34;, &#34;localhost&#34;)
+            db_port = self.db_config.get(&#34;port&#34;, 5432)
+            db_user = self.db_config.get(&#34;user&#34;, &#34;postgres&#34;)
+            db_password = self.db_config.get(&#34;password&#34;, &#34;postgres&#34;)
+            db_name = self.db_config.get(&#34;name&#34;, &#34;cinedb&#34;)
+            
+            # Conectar a PostgreSQL (base de datos postgres)
+            conn = psycopg2.connect(
+                host=db_host,
+                port=db_port,
+                user=db_user,
+                password=db_password,
+                database=&#34;postgres&#34;
+            )
+            conn.autocommit = True
+            cursor = conn.cursor()
+            
+            # Eliminar conexiones activas
+            cursor.execute(f&#34;&#34;&#34;
+                SELECT pg_terminate_backend(pg_stat_activity.pid)
+                FROM pg_stat_activity
+                WHERE pg_stat_activity.datname = &#39;{db_name}&#39;
+                AND pid &lt;&gt; pg_backend_pid()
+            &#34;&#34;&#34;)
+            
+            # Eliminar la base de datos
+            cursor.execute(f&#34;DROP DATABASE IF EXISTS {db_name}&#34;)
+            print(f&#34;💀 Base de datos &#39;{db_name}&#39; eliminada&#34;)
+            
+            # Recrear la base de datos
+            cursor.execute(f&#34;CREATE DATABASE {db_name}&#34;)
+            print(f&#34;✅ Base de datos &#39;{db_name}&#39; recreada&#34;)
+            
+            cursor.close()
+            conn.close()
+            
+            # Aplicar esquema si existe
+            schema_path = Path(&#34;config/schema.sql&#34;)
+            if schema_path.exists():
+                conn = psycopg2.connect(
+                    host=db_host,
+                    port=db_port,
+                    user=db_user,
+                    password=db_password,
+                    database=db_name
+                )
+                conn.autocommit = True
+                cursor = conn.cursor()
+                
+                print(&#34;📊 Aplicando esquema de base de datos...&#34;)
+                with open(schema_path, &#34;r&#34;) as f:
+                    schema_sql = f.read()
+                cursor.execute(schema_sql)
+                
+                cursor.close()
+                conn.close()
+            
+            return True
+            
+        except Exception as e:
+            print(f&#34;❌ Error purgando la base de datos: {e}&#34;)
+            return False
+    
+    def clean(self):
+        &#34;&#34;&#34;Limpia archivos temporales y caché&#34;&#34;&#34;
+        print(&#34;🧹 Limpiando archivos temporales...&#34;)
+        
+        # Eliminar directorios de caché
+        for path in Path(&#34;.&#34;).rglob(&#34;__pycache__&#34;):
+            if path.is_dir():
+                shutil.rmtree(path)
+        
+        # Eliminar archivos temporales
+        for ext in [&#34;*.pyc&#34;, &#34;*.pyo&#34;, &#34;*.log&#34;]:
+            for path in Path(&#34;.&#34;).rglob(ext):
+                path.unlink()
+        
+        print(&#34;✅ Limpieza completada&#34;)
+        return True
+    
+    def run_scraper(self, args):
+        &#34;&#34;&#34;Ejecuta el scraper con los argumentos proporcionados&#34;&#34;&#34;
+        print(&#34;🕸️ Ejecutando scraper de Cinesa...&#34;)
+        
+        # Importar el scraper dinámicamente
+        scraper_path = Path(&#34;scrapers/cinesa_detalles_scraper.py&#34;)
+        if not scraper_path.exists():
+            print(f&#34;❌ Scraper no encontrado en {scraper_path}&#34;)
+            return False
+        
+        try:
+            # Construir comando para ejecutar el scraper
+            cmd = [sys.executable, str(scraper_path)]
+            
+            if args.solo_lista:
+                cmd.append(&#34;--solo-lista&#34;)
+            if args.max:
+                cmd.extend([&#34;--max&#34;, str(args.max)])
+            if args.hilos:
+                cmd.extend([&#34;--hilos&#34;, str(args.hilos)])
+            if args.demora:
+                cmd.extend([&#34;--demora&#34;, str(args.demora)])
+            if args.pelicula:
+                cmd.extend([&#34;--pelicula&#34;, args.pelicula])
+            
+            # Ejecutar el scraper
+            subprocess.run(cmd, check=True)
+            print(&#34;✅ Scraper ejecutado correctamente&#34;)
+            return True
+            
+        except Exception as e:
+            print(f&#34;❌ Error ejecutando scraper: {e}&#34;)
+            return False</code></pre>
+</details>
+<div class="desc"><p>CLI principal para gestionar el scraper y la base de datos</p></div>
+<h3>Methods</h3>
+<dl>
+<dt id="gadget.GadgetCLI.backup_db"><code class="name flex">
+<span>def <span class="ident">backup_db</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def backup_db(self):
+    &#34;&#34;&#34;Realiza backup de la base de datos PostgreSQL&#34;&#34;&#34;
+    print(&#34;💾 Creando backup de la base de datos...&#34;)
+    
+    try:
+        # Configuración de la base de datos
+        db_host = self.db_config.get(&#34;host&#34;, &#34;localhost&#34;)
+        db_port = self.db_config.get(&#34;port&#34;, 5432)
+        db_user = self.db_config.get(&#34;user&#34;, &#34;postgres&#34;)
+        db_password = self.db_config.get(&#34;password&#34;, &#34;postgres&#34;)
+        db_name = self.db_config.get(&#34;name&#34;, &#34;cinedb&#34;)
+        
+        # Nombre del archivo de backup
+        timestamp = datetime.datetime.now().strftime(&#34;%Y%m%d_%H%M%S&#34;)
+        backup_file = self.backup_dir / f&#34;backup_{db_name}_{timestamp}.sql&#34;
+        
+        # Configurar entorno para pg_dump
+        env = os.environ.copy()
+        env[&#34;PGPASSWORD&#34;] = db_password
+        
+        # Ejecutar pg_dump
+        result = subprocess.run(
+            [
+                &#34;pg_dump&#34;,
+                &#34;-h&#34;, str(db_host),
+                &#34;-p&#34;, str(db_port),
+                &#34;-U&#34;, db_user,
+                &#34;-d&#34;, db_name,
+                &#34;-f&#34;, str(backup_file)
+            ],
+            env=env,
+            check=True,
+            capture_output=True,
+            text=True
+        )
+        
+        # Comprimir el backup
+        with open(backup_file, &#39;rb&#39;) as f_in:
+            with gzip.open(f&#34;{backup_file}.gz&#34;, &#39;wb&#39;) as f_out:
+                f_out.writelines(f_in)
+        
+        # Eliminar el archivo sin comprimir
+        backup_file.unlink()
+        
+        print(f&#34;✅ Backup guardado en: {backup_file}.gz&#34;)
+        return True
+        
+    except Exception as e:
+        print(f&#34;❌ Error creando backup: {e}&#34;)
+        return False</code></pre>
+</details>
+<div class="desc"><p>Realiza backup de la base de datos PostgreSQL</p></div>
+</dd>
+<dt id="gadget.GadgetCLI.clean"><code class="name flex">
+<span>def <span class="ident">clean</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def clean(self):
+    &#34;&#34;&#34;Limpia archivos temporales y caché&#34;&#34;&#34;
+    print(&#34;🧹 Limpiando archivos temporales...&#34;)
+    
+    # Eliminar directorios de caché
+    for path in Path(&#34;.&#34;).rglob(&#34;__pycache__&#34;):
+        if path.is_dir():
+            shutil.rmtree(path)
+    
+    # Eliminar archivos temporales
+    for ext in [&#34;*.pyc&#34;, &#34;*.pyo&#34;, &#34;*.log&#34;]:
+        for path in Path(&#34;.&#34;).rglob(ext):
+            path.unlink()
+    
+    print(&#34;✅ Limpieza completada&#34;)
+    return True</code></pre>
+</details>
+<div class="desc"><p>Limpia archivos temporales y caché</p></div>
+</dd>
+<dt id="gadget.GadgetCLI.purge_db"><code class="name flex">
+<span>def <span class="ident">purge_db</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def purge_db(self):
+    &#34;&#34;&#34;Purga la base de datos PostgreSQL&#34;&#34;&#34;
+    print(&#34;🔥 Purgando la base de datos...&#34;)
+    
+    try:
+        # Configuración de la base de datos
+        db_host = self.db_config.get(&#34;host&#34;, &#34;localhost&#34;)
+        db_port = self.db_config.get(&#34;port&#34;, 5432)
+        db_user = self.db_config.get(&#34;user&#34;, &#34;postgres&#34;)
+        db_password = self.db_config.get(&#34;password&#34;, &#34;postgres&#34;)
+        db_name = self.db_config.get(&#34;name&#34;, &#34;cinedb&#34;)
+        
+        # Conectar a PostgreSQL (base de datos postgres)
+        conn = psycopg2.connect(
+            host=db_host,
+            port=db_port,
+            user=db_user,
+            password=db_password,
+            database=&#34;postgres&#34;
+        )
+        conn.autocommit = True
+        cursor = conn.cursor()
+        
+        # Eliminar conexiones activas
+        cursor.execute(f&#34;&#34;&#34;
+            SELECT pg_terminate_backend(pg_stat_activity.pid)
+            FROM pg_stat_activity
+            WHERE pg_stat_activity.datname = &#39;{db_name}&#39;
+            AND pid &lt;&gt; pg_backend_pid()
+        &#34;&#34;&#34;)
+        
+        # Eliminar la base de datos
+        cursor.execute(f&#34;DROP DATABASE IF EXISTS {db_name}&#34;)
+        print(f&#34;💀 Base de datos &#39;{db_name}&#39; eliminada&#34;)
+        
+        # Recrear la base de datos
+        cursor.execute(f&#34;CREATE DATABASE {db_name}&#34;)
+        print(f&#34;✅ Base de datos &#39;{db_name}&#39; recreada&#34;)
+        
+        cursor.close()
+        conn.close()
+        
+        # Aplicar esquema si existe
+        schema_path = Path(&#34;config/schema.sql&#34;)
+        if schema_path.exists():
+            conn = psycopg2.connect(
+                host=db_host,
+                port=db_port,
+                user=db_user,
+                password=db_password,
+                database=db_name
+            )
+            conn.autocommit = True
+            cursor = conn.cursor()
+            
+            print(&#34;📊 Aplicando esquema de base de datos...&#34;)
+            with open(schema_path, &#34;r&#34;) as f:
+                schema_sql = f.read()
+            cursor.execute(schema_sql)
+            
+            cursor.close()
+            conn.close()
+        
+        return True
+        
+    except Exception as e:
+        print(f&#34;❌ Error purgando la base de datos: {e}&#34;)
+        return False</code></pre>
+</details>
+<div class="desc"><p>Purga la base de datos PostgreSQL</p></div>
+</dd>
+<dt id="gadget.GadgetCLI.run_scraper"><code class="name flex">
+<span>def <span class="ident">run_scraper</span></span>(<span>self, args)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def run_scraper(self, args):
+    &#34;&#34;&#34;Ejecuta el scraper con los argumentos proporcionados&#34;&#34;&#34;
+    print(&#34;🕸️ Ejecutando scraper de Cinesa...&#34;)
+    
+    # Importar el scraper dinámicamente
+    scraper_path = Path(&#34;scrapers/cinesa_detalles_scraper.py&#34;)
+    if not scraper_path.exists():
+        print(f&#34;❌ Scraper no encontrado en {scraper_path}&#34;)
+        return False
+    
+    try:
+        # Construir comando para ejecutar el scraper
+        cmd = [sys.executable, str(scraper_path)]
+        
+        if args.solo_lista:
+            cmd.append(&#34;--solo-lista&#34;)
+        if args.max:
+            cmd.extend([&#34;--max&#34;, str(args.max)])
+        if args.hilos:
+            cmd.extend([&#34;--hilos&#34;, str(args.hilos)])
+        if args.demora:
+            cmd.extend([&#34;--demora&#34;, str(args.demora)])
+        if args.pelicula:
+            cmd.extend([&#34;--pelicula&#34;, args.pelicula])
+        
+        # Ejecutar el scraper
+        subprocess.run(cmd, check=True)
+        print(&#34;✅ Scraper ejecutado correctamente&#34;)
+        return True
+        
+    except Exception as e:
+        print(f&#34;❌ Error ejecutando scraper: {e}&#34;)
+        return False</code></pre>
+</details>
+<div class="desc"><p>Ejecuta el scraper con los argumentos proporcionados</p></div>
+</dd>
+<dt id="gadget.GadgetCLI.setup_db"><code class="name flex">
+<span>def <span class="ident">setup_db</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def setup_db(self):
+    &#34;&#34;&#34;Configura la base de datos PostgreSQL&#34;&#34;&#34;
+    print(&#34;🗄️ Configurando base de datos PostgreSQL...&#34;)
+    
+    try:
+        # Conectar a PostgreSQL
+        conn = psycopg2.connect(
+            host=self.db_config.get(&#34;host&#34;, &#34;localhost&#34;),
+            port=self.db_config.get(&#34;port&#34;, 5432),
+            user=self.db_config.get(&#34;user&#34;, &#34;postgres&#34;),
+            password=self.db_config.get(&#34;password&#34;, &#34;postgres&#34;),
+            # Conectar a &#39;postgres&#39; por defecto para crear nuestra base de datos
+            database=&#34;postgres&#34;
+        )
+        conn.autocommit = True
+        cursor = conn.cursor()
+        
+        # Crear la base de datos si no existe
+        db_name = self.db_config.get(&#34;name&#34;, &#34;cinedb&#34;)
+        cursor.execute(f&#34;SELECT 1 FROM pg_database WHERE datname = &#39;{db_name}&#39;&#34;)
+        if not cursor.fetchone():
+            cursor.execute(f&#34;CREATE DATABASE {db_name}&#34;)
+            print(f&#34;✅ Base de datos &#39;{db_name}&#39; creada&#34;)
+        else:
+            print(f&#34;✅ Base de datos &#39;{db_name}&#39; ya existe&#34;)
+        
+        # Cerrar conexión a &#39;postgres&#39;
+        cursor.close()
+        conn.close()
+        
+        # Reconectar a nuestra base de datos
+        conn = psycopg2.connect(
+            host=self.db_config.get(&#34;host&#34;, &#34;localhost&#34;),
+            port=self.db_config.get(&#34;port&#34;, 5432),
+            user=self.db_config.get(&#34;user&#34;, &#34;postgres&#34;),
+            password=self.db_config.get(&#34;password&#34;, &#34;postgres&#34;),
+            database=db_name
+        )
+        conn.autocommit = True
+        cursor = conn.cursor()
+        
+        # Aplicar esquema si existe
+        schema_path = Path(&#34;config/schema.sql&#34;)
+        if schema_path.exists():
+            print(&#34;📊 Aplicando esquema de base de datos...&#34;)
+            with open(schema_path, &#34;r&#34;) as f:
+                schema_sql = f.read()
+            cursor.execute(schema_sql)
+            print(&#34;✅ Esquema aplicado correctamente&#34;)
+        
+        cursor.close()
+        conn.close()
+        
+        return True
+        
+    except Exception as e:
+        print(f&#34;❌ Error configurando la base de datos: {e}&#34;)
+        return False</code></pre>
+</details>
+<div class="desc"><p>Configura la base de datos PostgreSQL</p></div>
+</dd>
+<dt id="gadget.GadgetCLI.setup_venv"><code class="name flex">
+<span>def <span class="ident">setup_venv</span></span>(<span>self)</span>
+</code></dt>
+<dd>
+<details class="source">
+<summary>
+<span>Expand source code</span>
+</summary>
+<pre><code class="python">def setup_venv(self):
+    &#34;&#34;&#34;Configura el entorno virtual e instala dependencias&#34;&#34;&#34;
+    print(&#34;🚀 Configurando entorno virtual...&#34;)
+    
+    venv_path = Path(&#34;venv&#34;)
+    if not venv_path.exists():
+        subprocess.run([sys.executable, &#34;-m&#34;, &#34;venv&#34;, &#34;venv&#34;], check=True)
+        print(&#34;✅ Entorno virtual creado&#34;)
+    else:
+        print(&#34;✅ El entorno virtual ya existe&#34;)
+    
+    # Determinar la ruta al pip del entorno virtual
+    if sys.platform == &#34;win32&#34;:
+        pip_path = &#34;venv\\Scripts\\pip&#34;
+    else:
+        pip_path = &#34;venv/bin/pip&#34;
+    
+    # Instalar dependencias
+    print(&#34;📦 Instalando dependencias...&#34;)
+    subprocess.run([pip_path, &#34;install&#34;, &#34;--upgrade&#34;, &#34;pip&#34;], check=True)
+    subprocess.run([pip_path, &#34;install&#34;, &#34;-r&#34;, &#34;requirements.txt&#34;], check=True)
+    print(&#34;✅ Dependencias instaladas correctamente&#34;)
+    
+    return True</code></pre>
+</details>
+<div class="desc"><p>Configura el entorno virtual e instala dependencias</p></div>
+</dd>
+</dl>
+</dd>
+</dl>
+</section>
+</article>
+<nav id="sidebar">
+<div class="toc">
+<ul></ul>
+</div>
+<ul id="index">
+<li><h3><a href="#header-functions">Functions</a></h3>
+<ul class="">
+<li><code><a title="gadget.main" href="#gadget.main">main</a></code></li>
+</ul>
+</li>
+<li><h3><a href="#header-classes">Classes</a></h3>
+<ul>
+<li>
+<h4><code><a title="gadget.GadgetCLI" href="#gadget.GadgetCLI">GadgetCLI</a></code></h4>
+<ul class="two-column">
+<li><code><a title="gadget.GadgetCLI.backup_db" href="#gadget.GadgetCLI.backup_db">backup_db</a></code></li>
+<li><code><a title="gadget.GadgetCLI.clean" href="#gadget.GadgetCLI.clean">clean</a></code></li>
+<li><code><a title="gadget.GadgetCLI.purge_db" href="#gadget.GadgetCLI.purge_db">purge_db</a></code></li>
+<li><code><a title="gadget.GadgetCLI.run_scraper" href="#gadget.GadgetCLI.run_scraper">run_scraper</a></code></li>
+<li><code><a title="gadget.GadgetCLI.setup_db" href="#gadget.GadgetCLI.setup_db">setup_db</a></code></li>
+<li><code><a title="gadget.GadgetCLI.setup_venv" href="#gadget.GadgetCLI.setup_venv">setup_venv</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</main>
+<footer id="footer">
+<p>Generated by <a href="https://pdoc3.github.io/pdoc" title="pdoc: Python API documentation generator"><cite>pdoc</cite> 0.11.6</a>.</p>
+</footer>
+</body>
+</html>
