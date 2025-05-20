@@ -31,5 +31,5 @@ jobs:
       - name: Despliega a GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_TOKEN }}
+          github_token: ${{ secrets.GH_PAGES }}
           publish_dir: ./docs
