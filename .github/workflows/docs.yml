@@ -28,6 +28,71 @@ jobs:
         run: |
           pdoc --html --output-dir ./docs scrapers utils gadget.py --force
 
+      - name: Crea index.html para redireccionar
+        run: |
+          cat > ./docs/index.html << 'EOF'
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <meta charset="utf-8">
+              <title>Gadget - Documentación</title>
+              <meta http-equiv="refresh" content="0; url=./gadget.html">
+              <style>
+                body {
+                  font-family: Arial, sans-serif;
+                  line-height: 1.6;
+                  color: #333;
+                  max-width: 800px;
+                  margin: 0 auto;
+                  padding: 20px;
+                  text-align: center;
+                }
+                h1 {
+                  color: #2c3e50;
+                }
+                .loading {
+                  margin-top: 30px;
+                }
+                .progress {
+                  height: 5px;
+                  width: 200px;
+                  background: #eee;
+                  margin: 20px auto;
+                  border-radius: 3px;
+                  overflow: hidden;
+                }
+                .progress-bar {
+                  height: 100%;
+                  width: 0;
+                  background: #3498db;
+                  animation: progress 2s ease-in-out forwards;
+                }
+                @keyframes progress {
+                  0% { width: 0; }
+                  100% { width: 100%; }
+                }
+                a {
+                  color: #3498db;
+                  text-decoration: none;
+                }
+                a:hover {
+                  text-decoration: underline;
+                }
+              </style>
+            </head>
+            <body>
+              <h1>Gadget - Documentación</h1>
+              <p>Redirigiendo a la documentación principal...</p>
+              <div class="loading">
+                <div class="progress">
+                  <div class="progress-bar"></div>
+                </div>
+              </div>
+              <p>Si no eres redirigido automáticamente, <a href="./gadget.html">haz clic aquí</a>.</p>
+            </body>
+          </html>
+          EOF
+
       - name: Despliega a GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
