@@ -1,0 +1,22 @@
+{
+    "titulo": "La buena letra",
+    "url": "https://www.cinesa.es/peliculas/la-buena-letra/HO00002185/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 50m",
+    "fecha_estreno": "30 abril 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Celia Rico Clavellino",
+    "actores": [
+        "Roger Casamajor",
+        "Enric Auquer",
+        "Loreto Mauleón",
+        "Ana Rujas"
+    ],
+    "sinopsis": "En un pueblo valenciano, durante la posguerra, Ana trata de salir adelante con su familia; la guerra civil ha abierto una profunda herida en todos ellos, especialmente en su cuñado, Antonio. Ana intenta curar esa herida a base de guisos, secretos y silencios, pero cuando Isabel, recién casada con Antonio, llega a la familia, las atenciones y cuidados de Ana valdrán de poco o nada: el sacrificio no siempre tiene su recompensa.",
+    "poster_local": "/home/dev/gadget/data/imagenes/La_buena_letra.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:44:45.598350"
+}

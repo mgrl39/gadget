@@ -1,0 +1,28 @@
+{
+    "titulo": "Una película de Minecraft",
+    "url": "https://www.cinesa.es/peliculas/una-pelicula-de-minecraft/HO00001976/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 41m",
+    "fecha_estreno": "4 abril 2025",
+    "generos": [
+        "Acción",
+        "Comedia",
+        "Aventura"
+    ],
+    "clasificacion": "No recomendada para menores de 7 años",
+    "directores": "Jared Hess",
+    "actores": [
+        "Kate McKinnon",
+        "Jack Black",
+        "Jason Momoa",
+        "Jemaine Clement",
+        "Danielle Brooks",
+        "Jennifer Coolidge",
+        "Emma Myers",
+        "Sebastian Eugene Hansen"
+    ],
+    "sinopsis": "Bienvenido al mundo de Minecraft, donde la creatividad no sólo ayuda a crear, sino que es esencial para la supervivencia. Cuatro inadaptados -Garrett \"El Basurero\" Garrison (Momoa), Henry (Hansen), Natalie (Myers) y Dawn (Brooks)- se encuentran luchando con problemas ordinarios cuando de repente se ven arrastrados a través de un misterioso portal al Mundo Exterior: un extraño país de las maravillas cúbico que se nutre de la imaginación. Para volver a casa, tendrán que dominar este mundo (y protegerlo de cosas malvadas como Piglins y Zombies, también) mientras se embarcan en una búsqueda mágica con un inesperado experto artesano, Steve (Black). Juntos, su aventura desafiará a los cinco a ser audaces y a volver a conectar con las cualidades que hacen que cada uno de ellos sea único y creativo... las mismas habilidades que necesitan para prosperar en el mundo real.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Una_película_de_Minecraft.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:41:01.925170"
+}

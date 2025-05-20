@@ -1,0 +1,19 @@
+{
+    "titulo": "Sabiduría y felicidad",
+    "url": "https://www.cinesa.es/peliculas/sabiduria-y-felicidad/HO00002186/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 30m",
+    "fecha_estreno": "30 abril 2025",
+    "generos": [
+        "Documental"
+    ],
+    "clasificacion": "No recomendada para menores de 7 años",
+    "directores": "Barbara Miller, Philip Delaquis",
+    "actores": [
+        "The Dalai Lama"
+    ],
+    "sinopsis": "Sabiduría y felicidad es un documental profundamente íntimo y sumamente cinematográfico que presenta al Dalái Lama, quien, a sus casi 90 años, ofrece consejos prácticos para enfrentar los desafíos del siglo XXI. El mayor embajador de la compasión reflexiona sobre nuestra sociedad globalizada que lucha por superar la violencia y la guerra al borde del colapso ambiental, mostrándonos que es posible construir un mundo más saludable para todos los seres vivos y que las herramientas para conseguirlo, de hecho, ya están en nuestras manos. La película capta al Dalái Lama hablando directamente a los espectadores, creando una sensación de audiencia privada, y compartiendo su sabiduría eterna sobre cómo lograr la paz interior y la felicidad para todo el mundo.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Sabiduría_y_felicidad.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:46:23.529219"
+}

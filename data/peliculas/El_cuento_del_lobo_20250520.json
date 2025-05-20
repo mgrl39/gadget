@@ -1,0 +1,22 @@
+{
+    "titulo": "El cuento del lobo",
+    "url": "https://www.cinesa.es/peliculas/el-cuento-del-lobo/HO00002224/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 34m",
+    "fecha_estreno": "16 mayo 2025",
+    "generos": [
+        "Thriller"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "Norberto López Amado",
+    "actores": [
+        "María Romanillos",
+        "Daniel Grao",
+        "Paco Tous",
+        "Lucía Jiménez"
+    ],
+    "sinopsis": "Olga y Javier, una pareja de clase media, presencian como la chica que va a limpiarles la casa recibe mensajes amenazantes en su móvil. Ante esta situación, deciden intervenir, enfrentándose así a un repentino cambio de vida. La aparición del padre de la chica, las dudas y las diferencias cada vez generan más de interrogantes en una situación complicada de resolver. ¿Qué es lo correcto?",
+    "poster_local": "/home/dev/gadget/data/imagenes/El_cuento_del_lobo.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:43:13.585687"
+}

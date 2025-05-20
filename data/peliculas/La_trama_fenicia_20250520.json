@@ -1,0 +1,32 @@
+{
+    "titulo": "La trama fenicia",
+    "url": "https://www.cinesa.es/peliculas/la-trama-fenicia/HO00002227/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 41m",
+    "fecha_estreno": "30 mayo 2025",
+    "generos": [
+        "Comedia",
+        "Drama"
+    ],
+    "clasificacion": "Pendiente de Calificación.",
+    "directores": "Wes Anderson",
+    "actores": [
+        "Benedict  Cumberbatch",
+        "Scarlett  Johansson",
+        "Jeffrey Wright",
+        "Richard Ayoade",
+        "Bryan Cranston",
+        "Rupert Friend",
+        "Hope Davis",
+        "Tom Hanks",
+        "Michael Cera",
+        "Mathieu Amalric",
+        "Benicio Del Toro",
+        "Mia Threapleton",
+        "Riz Ahmed"
+    ],
+    "sinopsis": "Historia de espionaje a raíz de una tensa relación padre-hija en el seno de una empresa familiar.",
+    "poster_local": "/home/dev/gadget/data/imagenes/La_trama_fenicia.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:45:00.357054"
+}

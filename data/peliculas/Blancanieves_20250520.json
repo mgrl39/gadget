@@ -1,0 +1,25 @@
+{
+    "titulo": "Blancanieves",
+    "url": "https://www.cinesa.es/peliculas/blancanieves/HO00001975/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 48m",
+    "fecha_estreno": "21 marzo 2025",
+    "generos": [
+        "Familiar",
+        "Aventura",
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 7 años",
+    "directores": "Marc Webb",
+    "actores": [
+        "Rachel Zegler",
+        "Gal Gadot",
+        "Andrew Burnap",
+        "Colin Michael Carmichael",
+        "Ansu Kabia"
+    ],
+    "sinopsis": "“Blancanieves de Disney”, una versión musical de acción real de la película clásica de 1937, se estrena exclusivamente en cines el 21 de marzo de 2025. Protagonizada por Rachel Zegler (“West Side Story”) en el papel principal y Gal Gadot (“Wonder Woman”) como su madrastra, la Reina Malvada, la mágica aventura musical nos vuelve a transportar a esta maravillosa historia intemporal con personajes tan entrañables como Sabio, Gruñón, Feliz, Dormilón, Tímido, Mocoso y Mudito. “Blancanieves de Disney” está dirigida por Marc Webb (“The Amazing Spider-Man”) y producida por Marc Platt (“La Sirenita”) y Jared LeBoff (“La chica del tren”), con Callum McDougall (“El regreso de Mary Poppins”) como productor ejecutivo y con canciones originales totalmente nuevas de Benj Pasek y Justin Paul (“Querido Evan Hansen”).",
+    "poster_local": "/home/dev/gadget/data/imagenes/Blancanieves.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:42:11.733864"
+}

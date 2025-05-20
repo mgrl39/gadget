@@ -1,0 +1,27 @@
+{
+    "titulo": "Los pecadores",
+    "url": "https://www.cinesa.es/peliculas/los-pecadores/HO00002083/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 17m",
+    "fecha_estreno": "16 abril 2025",
+    "generos": [
+        "Terror",
+        "Drama",
+        "Thriller"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "Ryan Coogler",
+    "actores": [
+        "Jayme Lawson",
+        "Hailee Steinfeld",
+        "Wunmi Mosaku",
+        "Jack O'Connell",
+        "Delroy Lindo",
+        "Omar Benson Miller",
+        "Michael B. Jordan"
+    ],
+    "sinopsis": "Tratando de dejar atrás sus problemáticas vidas, dos hermanos gemelos (Jordan) regresan a su pueblo natal para empezar de nuevo, solo para descubrir que un mal aún mayor les espera para darles la bienvenida.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Los_pecadores.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:41:08.687222"
+}

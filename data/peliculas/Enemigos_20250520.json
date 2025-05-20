@@ -1,0 +1,24 @@
+{
+    "titulo": "Enemigos",
+    "url": "https://www.cinesa.es/peliculas/enemigos/HO00002160/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 43m",
+    "fecha_estreno": "9 mayo 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "David Valero",
+    "actores": [
+        "Luna Pamiés",
+        "Hugo Welzel",
+        "Estefanía de los Santos",
+        "Sara Vidorreta",
+        "José María Peinado",
+        "Christian Checa"
+    ],
+    "sinopsis": "¿Qué harías por tu enemigo? ENEMIGOS es la historia de Chimo (Christian Checa) y El Rubio (Hugo Wetzel), dos adolescentes de barrio, víctima y verdugo, acosado y acosador, que han crecido siendo enemigos irreconciliables. Un día, Chimo tiene la oportunidad de vengarse y decide llevar a cabo su plan sin imaginarse las consecuencias que esto tendrá en las vidas de ambos.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Enemigos.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:43:29.161149"
+}

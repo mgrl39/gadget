@@ -1,0 +1,28 @@
+{
+    "titulo": "A Complete Unknown",
+    "url": "https://www.cinesa.es/peliculas/a-complete-unknown/HO00001915/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 20m",
+    "fecha_estreno": "28 febrero 2025",
+    "generos": [
+        "Musical",
+        "Drama",
+        "Biografía"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "James Mangold",
+    "actores": [
+        "Dan Fogler",
+        "Edward Norton",
+        "Timothée  Chalamet",
+        "Boyd Holbrook",
+        "Norbert Leo Butz",
+        "Monica Barbaro",
+        "Scoot McNairy",
+        "Elle Fanning"
+    ],
+    "sinopsis": "Ambientada en la influyente escena musical de Nueva York de principios de los años 60, A Complete Unknown cuenta la historia del meteórico ascenso del músico de Minnesota Bob Dylan, un cantante de folk de 19 años, hasta las salas de conciertos y lo más alto de las listas de éxitos. Sus canciones y su mística se convirtieron en un fenómeno mundial que culminó en 1995 con su rompedora actuación de rock eléctrico en el Newport Folk Festival.",
+    "poster_local": "/home/dev/gadget/data/imagenes/A_Complete_Unknown.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:41:42.110620"
+}

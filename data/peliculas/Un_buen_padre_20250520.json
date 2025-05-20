@@ -1,0 +1,20 @@
+{
+    "titulo": "Un buen padre",
+    "url": "https://www.cinesa.es/peliculas/un-buen-padre/HO00002244/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 33m",
+    "fecha_estreno": "23 mayo 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 7 años",
+    "directores": "Ronan Tronchot",
+    "actores": [
+        "Lyès Salem",
+        "Géraldine Nakache"
+    ],
+    "sinopsis": "En un pequeño pueblo del centro de Francia, Simon es un sacerdote dedicado plenamente a su parroquia. Durante una misa, Louise, a quien no había visto desde su seminario hace años, reaparece. Ella le presenta a Aloe, un niño de 11 años, del que él es padre. Esta noticia revolucionará su vida cotidiana: ¿podrá ser un buen sacerdote para sus fieles y un buen padre para su hijo? Simon intentará convencer a las máximas autoridades de la Iglesia de que su vocación es compatible con el amor paternal.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Un_buen_padre.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:47:03.121773"
+}

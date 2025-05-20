@@ -1,0 +1,25 @@
+{
+    "titulo": "Confidencial (Black Bag)",
+    "url": "https://www.cinesa.es/peliculas/confidencial-black-bag/HO00002131/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 33m",
+    "fecha_estreno": "16 abril 2025",
+    "generos": [
+        "Thriller"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Steven Soderbergh",
+    "actores": [
+        "Cate Blanchett",
+        "Michael Fassbender",
+        "Marisa Abela",
+        "Tom Burke",
+        "Pierce Brosnan",
+        "Regé-Jean  Page",
+        "Naomie  Harris"
+    ],
+    "sinopsis": "Drama de espionaje sobre los legendarios agentes de inteligencia George Woodhouse y su amada esposa Kathryn. Cuando surgen sospechas de que Kathryn ha podido traicionar a la nación, George deberá afrontar el reto definitivo: elegir entre lealtad al país o a su matrimonio.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Confidencial_Black_Bag.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:42:40.850739"
+}

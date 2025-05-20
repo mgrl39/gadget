@@ -1,0 +1,26 @@
+{
+    "titulo": "Warfare: Tiempo de guerra",
+    "url": "https://www.cinesa.es/peliculas/warfare-tiempo-de-guerra/HO00002145/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 35m",
+    "fecha_estreno": "16 abril 2025",
+    "generos": [
+        "Guerra"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "Ray Mendoza, Alex Garland",
+    "actores": [
+        "Will Poulter",
+        "Charles Melton",
+        "Joseph Quinn",
+        "Cosmo Jarvis",
+        "D'Pharaoh Woon-A-Tai",
+        "Finn Bennett",
+        "Noah Centineo",
+        "Kit Connor"
+    ],
+    "sinopsis": "Basada en las experiencias reales del ex marine Ray Mendoza durante la guerra de Irak.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Warfare_Tiempo_de_guerra.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:47:39.618104"
+}

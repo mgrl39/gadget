@@ -1,0 +1,25 @@
+{
+    "titulo": "Jane Austen arruinó mi vida",
+    "url": "https://www.cinesa.es/peliculas/jane-austen-arruino-mi-vida/HO00002233/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 38m",
+    "fecha_estreno": "16 mayo 2025",
+    "generos": [
+        "Comedia",
+        "Drama",
+        "Romance"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Laura Piani",
+    "actores": [
+        "Camille  Rutherford",
+        "Pablo Pauly",
+        "Annabelle Lengronne",
+        "Liz Crowther",
+        "Charlie Anson"
+    ],
+    "sinopsis": "Agathe, irremediablemente torpe pero encantadora y llena de contradicciones, se encuentra en un desesperado estado de soltería. Su sueño es vivir un amor digno de una novela de Jane Austen, y su máxima aspiración es convertirse en escritora. En su lugar, pasa los días vendiendo libros en la legendaria librería británica Shakespeare & Co, en París. Al ser invitada a la Residencia de Escritores Jane Austen en Inglaterra, Agathe, deberá enfrentar sus inseguridades para cumplir el sueño de convertirse en novelista y se verá atrapada en un caótico triángulo amoroso que le hará replantearse su vida sentimental.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Jane_Austen_arruinó_mi_vida.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:44:07.529595"
+}

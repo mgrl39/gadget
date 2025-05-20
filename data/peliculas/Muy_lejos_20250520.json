@@ -1,0 +1,25 @@
+{
+    "titulo": "Muy lejos",
+    "url": "https://www.cinesa.es/peliculas/muy-lejos/HO00002124/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 40m",
+    "fecha_estreno": "11 abril 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Gerard Oms",
+    "actores": [
+        "Mario Casas",
+        "Ilyass El Ouahdani",
+        "Jetty Mathurin",
+        "Raúl Prieto",
+        "Hanneke van der Paardt",
+        "Daniel Medrán",
+        "David Verdaguer"
+    ],
+    "sinopsis": "Sergio (Mario Casas) viaja a Utrecht con su familia para asistir a un partido de fútbol.  Antes de coger el vuelo de regreso a Barcelona, sufre un ataque de pánico y decide quedarse en Holanda. Incapaz de dar una explicación lógica a los suyos, corta el contacto con su pasado. A partir de ese momento, tendrá que sobrevivir sin dinero, sin amigos, sin casa y sin hablar el idioma, hasta que sea capaz de encontrarse a sí mismo.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Muy_lejos.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:45:38.355144"
+}

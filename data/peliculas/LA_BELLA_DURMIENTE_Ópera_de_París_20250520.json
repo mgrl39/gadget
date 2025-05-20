@@ -1,0 +1,19 @@
+{
+    "titulo": "LA BELLA DURMIENTE (Ópera de París)",
+    "url": "https://www.cinesa.es/peliculas/la-bella-durmiente-opera-de-paris/HO00002005/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 40m",
+    "fecha_estreno": "29 mayo 2025",
+    "generos": [
+        "Ballet"
+    ],
+    "clasificacion": "Pendiente de Calificación.",
+    "directores": "Rudolf Nureyev",
+    "actores": [
+        "Paris Opera Ballet"
+    ],
+    "sinopsis": "En su bautismo, la princesa Aurora recibe todas las perfecciones y cualidades de sus madrinas. La vieja hada Carabosse, al ser olvidada como invitada a las fiestas, lanza un terrible hechizo: Aurora se pinchará el dedo con un huso y morirá. Afortunadamente, el Hada Lila mitiga la maldición. En lugar de morir, la princesa caerá en un profundo sueño que durará cien años.",
+    "poster_local": "/home/dev/gadget/data/imagenes/LA_BELLA_DURMIENTE_Ópera_de_París.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:48:09.677574"
+}

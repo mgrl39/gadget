@@ -1,0 +1,23 @@
+{
+    "titulo": "Bonhoeffer, el espía",
+    "url": "https://www.cinesa.es/peliculas/bonhoeffer-el-espia/HO00002222/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 12m",
+    "fecha_estreno": "16 mayo 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Todd Komarnicki",
+    "actores": [
+        "David Jonsson",
+        "Jonas Dassler",
+        "Moritz Bleibtreu",
+        "August Diehl",
+        "Nadine Heidenreich"
+    ],
+    "sinopsis": "Narra la historia de Dietrich Bonhoeffer, un hombre cuya fe y principios lo llevaron a convertirse en un espía y participar en un complot para asesinar a Hitler. Comprometido con la resistencia y en contra de su propio pueblo, su valentía trascendió más allá de su tiempo, dejando un legado de resistencia contra la opresión.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Bonhoeffer_el_espía.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:42:27.392620"
+}

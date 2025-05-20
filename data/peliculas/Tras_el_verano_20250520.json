@@ -1,0 +1,24 @@
+{
+    "titulo": "Tras el verano",
+    "url": "https://www.cinesa.es/peliculas/tras-el-verano/HO00002225/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 33m",
+    "fecha_estreno": "16 mayo 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 7 años",
+    "directores": "Yolanda Centeno",
+    "actores": [
+        "Juan Diego Botto",
+        "Alexandra  Jiménez",
+        "Ruth Gabriel",
+        "Stéphanie Magnin",
+        "Edu Rejón",
+        "Alejandro López"
+    ],
+    "sinopsis": "Paula, Raúl y Dani podrían ser una familia más. Podrían serlo, de no ser porque Dani no es hijo de Paula, y ésta se enfrenta con el reto diario de encajar en una familia reconstituida. Este conflicto, unido a una crisis de pareja, hace que Paula pueda dejar de ver para siempre a Dani. Una historia que nos habla de afectos, poniendo los derechos del menor en el centro del debate y una gran pregunta: ¿qué es más importante, los sentimientos o el ADN?",
+    "poster_local": "/home/dev/gadget/data/imagenes/Tras_el_verano.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:46:54.625923"
+}

@@ -1,0 +1,26 @@
+{
+    "titulo": "Aida (Parquesur)",
+    "url": "https://www.cinesa.es/peliculas/aida-parquesur/HO00001881/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 40m",
+    "fecha_estreno": "29 mayo 2025",
+    "generos": [
+        "Opera live"
+    ],
+    "clasificacion": "Pendiente de Calificación.",
+    "directores": "Volker Grohskopf",
+    "actores": [
+        "Kristin Lewis",
+        "Martin Muehle",
+        "Anunnziata Vestri",
+        "Luca Dall'Amico",
+        "Alexey Dedov",
+        "Rosanna lo Creco",
+        "Giorgio Trucco",
+        "Ramaz Chikviladze"
+    ],
+    "sinopsis": "El Festival de Ópera de St. Margarethen, les invita a un viaje en el tiempo al Egipto de los faraones para sumergirse en la dramática historia de amor entre la sirvienta Aida y el capitán Radamés. Una mirada épica, con efectos especiales de pirotecnia, caballos, elefantes, una escenografía imponente y más de 400 participantes entre solistas, coro, ballet y orquesta.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Aida_Parquesur.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:47:54.756632"
+}

@@ -1,0 +1,25 @@
+{
+    "titulo": "Anzu, gato fantasma",
+    "url": "https://www.cinesa.es/peliculas/anzu-gato-fantasma/HO00002234/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 34m",
+    "fecha_estreno": "16 mayo 2025",
+    "generos": [
+        "Familiar",
+        "Animación",
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 7 años",
+    "directores": "Yôko Kuno, Nobuhiro Yamashita",
+    "actores": [
+        "Mirai Moriyama",
+        "Munetaka Aoki",
+        "Keiichi Suzuki",
+        "Noa Gotô",
+        "Miwako Ichikawa"
+    ],
+    "sinopsis": "¿Volveremos a vernos en algún lugar?”",
+    "poster_local": "/home/dev/gadget/data/imagenes/Anzu_gato_fantasma.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:41:57.244050"
+}

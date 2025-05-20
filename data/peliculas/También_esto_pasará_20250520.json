@@ -1,0 +1,24 @@
+{
+    "titulo": "También esto pasará",
+    "url": "https://www.cinesa.es/peliculas/tambien-esto-pasara/HO00002208/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 36m",
+    "fecha_estreno": "9 mayo 2025",
+    "generos": [
+        "Drama"
+    ],
+    "clasificacion": "No recomendada para menores de 12 años",
+    "directores": "Maria Ripoll",
+    "actores": [
+        "Carlos Cuevas",
+        "Marina Salas",
+        "Carles Francino",
+        "Susi Sánchez",
+        "Andrea Trepat",
+        "Borja Espinosa"
+    ],
+    "sinopsis": "Buscando superar la reciente pérdida de su madre, Blanca se refugia en la casa familiar de Cadaqués para pasar el verano junto a su familia y amigos. Entre copas de vino, salidas en barco y encuentros con sus amantes, Blanca aprenderá a quedarse con el recuerdo de lo vivido y lo mucho aprendido.",
+    "poster_local": "/home/dev/gadget/data/imagenes/También_esto_pasará.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:46:31.702920"
+}

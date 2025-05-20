@@ -1,0 +1,25 @@
+{
+    "titulo": "28 días después",
+    "url": "https://www.cinesa.es/peliculas/28-dias-despues/HO00002240/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 55m",
+    "fecha_estreno": "21 mayo 2025",
+    "generos": [
+        "Terror",
+        "Drama",
+        "Thriller"
+    ],
+    "clasificacion": "No recomendada para menores de 18 años",
+    "directores": "Danny Boyle",
+    "actores": [
+        "Brendan Gleeson",
+        "Cillian Murphy",
+        "Noah Huntley",
+        "Christopher Eccleston",
+        "David Schneider"
+    ],
+    "sinopsis": "Cuatro semanas después de que un misterioso e incurable virus se extienda por todo el Reino Unido, un puñado de supervivientes intenta encontrar refugio.",
+    "poster_local": "/home/dev/gadget/data/imagenes/28_días_después.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:41:31.424168"
+}

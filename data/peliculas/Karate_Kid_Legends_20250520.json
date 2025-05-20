@@ -1,0 +1,26 @@
+{
+    "titulo": "Karate Kid: Legends",
+    "url": "https://www.cinesa.es/peliculas/karate-kid-legends/HO00002187/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 0m",
+    "fecha_estreno": "8 agosto 2025",
+    "generos": [
+        "Acción",
+        "Familiar",
+        "Drama"
+    ],
+    "clasificacion": "Pendiente de Calificación.",
+    "directores": "Jonathan Entwistle",
+    "actores": [
+        "Jackie Chan",
+        "Ben Wang",
+        "Ralph Macchio",
+        "Joshua Jackson",
+        "Sadie Stanley",
+        "Ming-Na Wen"
+    ],
+    "sinopsis": "En Karate Kid: Legends, tras una tragedia familiar, el prodigio del kung fu Li Fong (Ben Wang) se ve obligado a abandonar su hogar en Pekín y trasladarse a Nueva York con su madre. Li lucha por dejar atrás su pasado mientras intenta encajar con sus nuevos compañeros de clase y, aunque no quiere pelear, los problemas parecen encontrarle en todas partes. Cuando un nuevo amigo necesita su ayuda, Li se presenta a una competición de kárate, pero sus habilidades no son suficientes. El profesor de kung fu de Li, el Sr. Han (Jackie Chan), pide ayuda al Karate Kid original, Daniel LaRusso (Ralph Macchio), y Li aprende una nueva forma de luchar, fusionando sus dos estilos en uno solo para el enfrentamiento definitivo de artes marciales.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Karate_Kid_Legends.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:44:28.689522"
+}

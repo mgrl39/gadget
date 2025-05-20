@@ -1,0 +1,26 @@
+{
+    "titulo": "Elio",
+    "url": "https://www.cinesa.es/peliculas/elio/HO00002170/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 0m",
+    "fecha_estreno": "9 julio 2025",
+    "generos": [
+        "Comedia",
+        "Aventura",
+        "Animación"
+    ],
+    "clasificacion": "Pendiente de Calificación.",
+    "directores": "Domee Shi, Madeline Sharafian, Adrian Molina",
+    "actores": [
+        "Jameela Jamil",
+        "Zoe Saldana",
+        "Yonas Kibreab",
+        "Remy Edgerly",
+        "Brad Garrett",
+        "Shirley Henderson"
+    ],
+    "sinopsis": "Historia de Elio, un niño de 11 años, que lucha por encajar hasta que de repente es transportado por extraterrestres y es elegido para ser el embajador galáctico de la Tierra.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Elio.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:43:21.299897"
+}

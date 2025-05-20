@@ -1,0 +1,26 @@
+{
+    "titulo": "La cita",
+    "url": "https://www.cinesa.es/peliculas/la-cita/HO00002114/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 35m",
+    "fecha_estreno": "11 abril 2025",
+    "generos": [
+        "Drama",
+        "Thriller",
+        "Misterio"
+    ],
+    "clasificacion": "No recomendada para menores de 16 años",
+    "directores": "Christopher Landon",
+    "actores": [
+        "Jeffery Self",
+        "Brandon Sklenar",
+        "Meghann Fahy",
+        "Violett Beane",
+        "Jacob Robinson",
+        "Ed Weeks"
+    ],
+    "sinopsis": "Las primeras citas siempre son muy estresantes. ¿Ir a una primera cita mientras un desconocido te envía memes que van de molestos a homicidas?",
+    "poster_local": "/home/dev/gadget/data/imagenes/La_cita.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:44:52.390169"
+}

@@ -1,0 +1,27 @@
+{
+    "titulo": "Cónclave",
+    "url": "https://www.cinesa.es/peliculas/conclave/HO00001775/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "2h 0m",
+    "fecha_estreno": "20 diciembre 2024",
+    "generos": [
+        "Thriller"
+    ],
+    "clasificacion": "No recomendada para menores de 7 años",
+    "directores": "Edward Berger",
+    "actores": [
+        "Ralph Fiennes",
+        "Isabella  Rossellini",
+        "Lucian Msamati",
+        "Merab Ninidze",
+        "Sergio Castellitto",
+        "Brian F. O'Byrne",
+        "Carlos Diehz",
+        "Stanley Tucci",
+        "John Lithgow"
+    ],
+    "sinopsis": "El cardenal Lomeli supervisa al grupo de cardenales responsables de seleccionar un nuevo líder de la Iglesia mientras intenta descubrir un secreto del difunto Pontífice",
+    "poster_local": "/home/dev/gadget/data/imagenes/Cónclave.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:42:33.720307"
+}

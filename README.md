@@ -1,6 +1,6 @@
 # 🤖 Gadget
 
-Este proyecto está diseñado para 🕵️‍♂️ extraer información de diversas páginas web y almacenarla en una base de datos.
+Este proyecto está diseñado para 🕵️‍♂️ extraer información de películas de Cinesa y almacenarla en una base de datos PostgreSQL.
 
 <p align="center">
   <img src="gadget.jpeg" width="500" alt="Gadget Logo">
@@ -8,79 +8,55 @@ Este proyecto está diseñado para 🕵️‍♂️ extraer información de dive
 
 ## 🚀 Características
 
-- 🔍 Scraping de diferentes sitios web
-- 🗄️ Inserción de datos en MySQL
-- ⚙️ Automatización con `Makefile`
-- 🖥️ Panel de control web interactivo
+- 🔍 Scraping avanzado del sitio web de Cinesa
+- 🗄️ Almacenamiento de datos en PostgreSQL
+- 🖼️ Descarga y optimización automática de imágenes
+- 🧵 Procesamiento multihilo para mayor velocidad
 
 ## 📋 Requisitos
 
-- 🐍 Python 3.x
+- 🐍 Python 3.8+
 - 🛠️ Entorno virtual (`venv`)
 - 📦 Dependencias en `requirements.txt`
-- 🏛️ MySQL instalado
+- 🏛️ PostgreSQL instalado
 
 ## 🛠️ Instalación
 
 ```bash
-make venv      # 🔗 Configurar entorno virtual
-make install   # 📥 Instalar dependencias
+python gadget.py setup   # 🔧 Configurar entorno y base de datos
 ```
 
 ## ⚙️ Configuración
 
-Edita `config/config.yaml`:
-
-```yaml
-maintainer: mgrl39
-version: 1.0
-scrape_website: www.cinesa.es
-github_repo: gadget
-```
+Edita `config/config.yaml` para configurar la conexión a la base de datos y opciones del scraper.
 
 ## 🎯 Uso
 
 ```bash
-make run      # 🤖 Ejecutar el scraper
-make test     # ✅ Ejecutar pruebas
-make clean    # 🧹 Limpiar archivos temporales
+# Ejecutar scraper completo
+python gadget.py scrape
+
+# Solo obtener lista de películas
+python gadget.py scrape --solo-lista
+
+# Limitar a un número máximo de películas
+python gadget.py scrape --max 10
+
+# Usar múltiples hilos
+python gadget.py scrape --hilos 3
+
+# Crear backup de la base de datos
+python gadget.py backup
+
+# Purgar la base de datos
+python gadget.py purge
+
+# Limpiar archivos temporales
+python gadget.py clean
 ```
-
-## 🖥️ Panel de Control
-
-Gadget incluye un panel web interactivo para gestionar todas las operaciones:
-
-```bash
-make panel    # 🌐 Iniciar el panel web de control
-```
-
-Características del panel:
-- 🌙 Modo oscuro/claro
-- 📋 Historial de comandos
-- 🔍 Búsqueda de acciones
-- 📊 Visualización mejorada de resultados
-- 📱 Diseño responsive
-
-El panel estará disponible en: http://localhost:5000
 
 ## 📄 Estructura del Proyecto
 
 ```
-gadget/
-├── config/               # Configuración
-├── makefiles/            # Submódulos de Makefile
-├── scripts/              # Scripts de utilidad
-├── templates/            # Plantillas HTML para el panel
-├── static/               # Recursos estáticos (CSS, JS)
-│   └── css/
-│       └── styles.css    # Estilos del panel
-├── utils/                # Utilidades de Python
-├── checkers/             # Verificadores de configuración
-├── purgers/              # Herramientas de limpieza
-├── Makefile              # Automatización principal
-└── gadget_panel.py       # Panel de control web
+
 ```
-
-## 📜 Licencia
-
-Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.

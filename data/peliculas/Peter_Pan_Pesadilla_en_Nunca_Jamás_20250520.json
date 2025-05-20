@@ -1,0 +1,26 @@
+{
+    "titulo": "Peter Pan: Pesadilla en Nunca Jamás",
+    "url": "https://www.cinesa.es/peliculas/peter-pan-pesadilla-en-nunca-jamas/HO00002089/",
+    "imagen_local": "/home/dev/gadget/data/imagenes/imagen_sin_titulo.jpg",
+    "duracion": "1h 29m",
+    "fecha_estreno": "4 abril 2025",
+    "generos": [
+        "Terror",
+        "Aventura",
+        "Fantasía"
+    ],
+    "clasificacion": "No recomendada para menores de 18 años",
+    "directores": "Scott Chambers",
+    "actores": [
+        "Peter DeSouza-Feighoney",
+        "Kierston Wareing",
+        "Nicholas Woodeson",
+        "Marcus Massey",
+        "Martin Portlock",
+        "Megan Placito"
+    ],
+    "sinopsis": "Sigue a Wendy Darling en su intento de rescatar a su hermano Michael de \"las garras del malvado Peter Pan\". Por el camino conoce a Campanilla, que en esta retorcida versión del cuento se verá tomando heroína, convencida de que es polvo de hadas.",
+    "poster_local": "/home/dev/gadget/data/imagenes/Peter_Pan_Pesadilla_en_Nunca_Jamás.jpg",
+    "sesiones": [],
+    "fecha_scraping": "2025-05-20T04:46:00.493748"
+}
