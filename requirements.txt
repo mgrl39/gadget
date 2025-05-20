@@ -13,7 +13,7 @@ argparse>=1.4.0
 pyyaml==6.0.1
 
 # Base de datos
-mysql-connector-python>=8.0.30
+psycopg2-binary>=2.9.5  # Adaptador PostgreSQL (versión binaria para facilitar instalación)
 
 # Multithreading y procesamiento paralelo
 futures>=3.0.5

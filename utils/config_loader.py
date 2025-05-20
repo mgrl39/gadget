@@ -52,7 +52,16 @@ def load_config(only_env=False):
     # Scraper
     scraper_config = config.get("scraper", {})
     scraper_config["user_agent"] = os.environ.get("SCRAPER_USER_AGENT", scraper_config.get("user_agent", "Mozilla/5.0"))
-    scraper_config["headless"] = os.environ.get("SCRAPER_HEADLESS", scraper_config.get("headless", "true")).lower() == "true"
+    
+    # Arreglo aquí: Manejar correctamente el valor booleano de headless
+    headless_value = scraper_config.get("headless", True)
+    if isinstance(headless_value, bool):
+        # Si ya es un booleano, úsalo directamente
+        scraper_config["headless"] = headless_value
+    else:
+        # Si es un string, conviértelo a booleano
+        scraper_config["headless"] = str(os.environ.get("SCRAPER_HEADLESS", headless_value)).lower() == "true"
+    
     scraper_config["max_retries"] = int(os.environ.get("SCRAPER_MAX_RETRIES", scraper_config.get("max_retries", 3)))
     scraper_config["timeout"] = int(os.environ.get("SCRAPER_TIMEOUT", scraper_config.get("timeout", 10)))
     config["scraper"] = scraper_config
