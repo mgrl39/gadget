@@ -2,10 +2,6 @@
 
 Este proyecto está diseñado para 🕵️‍♂️ extraer información de películas de Cinesa y almacenarla en una base de datos PostgreSQL.
 
-<p align="center">
-  <img src="gadget.jpeg" width="500" alt="Gadget Logo">
-</p>
-
 ## 🚀 Características
 
 - 🔍 Scraping avanzado del sitio web de Cinesa
